@@ -73,7 +73,6 @@ header {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-
 }
 
 #tel {
@@ -82,6 +81,9 @@ header {
 
 #tel p {
     height: auto;
+    font-size: 25px;
+    padding-bottom: 15px;
+
 }
 
 #tel img {
@@ -91,8 +93,29 @@ header {
     margin: 0 5px;
 }
 
+#tel a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+
 .span-pipe {
-    color: #d1d1d1;
+    color: #b9b9b9;
+}
+
+#data-topo p {
+    padding-bottom: 9px;
+    font-weight: bold;
+    color: black;
+    font-size: 10px;
+    padding-bottom: 5px;
+}
+
+#location p {
+    font-weight: bold;
+    color: black;
+    font-size: 10px;
+    padding-bottom: 5px;
 }
 
 /* Estilos para o menu de navegação */
@@ -116,7 +139,7 @@ header {
 
 .nav-list a {
     text-decoration: none;
-    color: #065e8a;
+    color: #68962f;
     display: block;
     transition: color 0.3s;
 }
@@ -266,6 +289,14 @@ header {
 #news h2 {
     font-size: 1.4rem;
     color: #065e8a;
+}
+
+#busca input {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+    transition: border-bottom-color 0.3s;
 }
 
 
