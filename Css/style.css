@@ -66,6 +66,7 @@ header {
     display: table;
     font-size: 0.7rem;
 }
+
 .info-topo #tel,
 #location,
 #data-topo,
@@ -135,7 +136,7 @@ header {
     text-decoration: none;
     color: #68962f;
     display: block;
-    transition: color  0.3s;
+    transition: color 0.3s;
 }
 
 .nav-list a:hover {
@@ -293,6 +294,194 @@ header {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    color: #29d123;
+}
+
+.menu,
+.search-mobile,
+.news-main-mobile {
+    display: none;
+}
+
+#form-search-mobile {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    #form-search {
+        display: none;
+    }
+
+    .menu,
+    .search-mobile,
+    .news-main-mobile {
+        display: block;
+    }
+
+    .container {
+        padding: 5px 0;
+    }
+
+    .logo {
+        text-align: center;
+        max-height: 80px;
+        width: 250px;
+        float: left;
+    }
+
+    .logo img {
+        max-width: 100%;
+    }
+
+    .info-topo {
+        display: none;
+    }
+
+    .menu {
+        z-index: 1000;
+    }
+
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: #eee;
+    }
+
+    .menu.open ul {
+        display: flex;
+        z-index: 1000;
+    }
+
+    .menu li {
+        display: block;
+        margin: 10px;
+    }
+
+    .menu li a {
+        text-decoration: none;
+    }
+
+    .menu .sub-menu ul {
+        position: static;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        float: left;
+        padding-top: 46px;
+        z-index: 1000;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    .search-mobile {
+        float: left;
+        width: 50px;
+        padding-top: 45px;
+        text-align: left;
+        cursor: pointer;
+
+    }
+
+    .search-mobile img {
+        width: 60%;
+
+
+    }
+
+    header {
+        height: auto;
+    }
+
+    .column {
+        flex: 1;
+
+    }
+
+    #desktop-visible {
+        display: none;
+    }
+
+    .news-main-mobile {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        padding: 5px;
+    }
+
+    .text-news-main-mobile {
+        width: 100%;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        margin: 0 15px;
+    }
+
+    .news-main-mobile figure {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .news-main-mobile figure img {
+        max-width: 100%;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .text-news-main-mobile span {
+        font-size: 1.2rem;
+        color: #ffffff;
+    }
+
+    .text-news-main-mobile h2 {
+        color: #ffffff;
+
+    }
+
+    #news {
+        width: 90%;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    #news h2 {
+        font-size: 20px;
+        color: #065e8a;
+    }
+
+    .last-news-text p {
+        color: #68962f;
+        font-weight: 300;
+        margin: 0;
+        font-size: 11px;
+        line-height: 1.2;
+    }
+
+    #destaques {
+        width: 90%;
+        padding-top: 5px;
+    }
+
+    .last-news-text a {
+        font-size: 13px;
+    }
+
+    .last-news-date {
+        color: #000000;
+    }
+}
+
 
 /* Limpar floats após o conteúdo flutuante */
 .clearfix::after {

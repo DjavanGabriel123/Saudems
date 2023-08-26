@@ -16,11 +16,30 @@
                 <input type="submit" name="btn-buscar" value="Buscar">
             </form>
         </section>
+        <div class="hamburger">&#9776;</div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#especiais">Especiais</a></li>
+                <li><a href="#noticias">Últimas Noticias</a></li>
+                <li><a href="#editorias">Editorias</a></li>
+                <li class="sub-menu">
+                    <a href="#">Menu 3</a>
+                    <ul>
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
         <section class="grid3 logo">
             <figure>
                 <img src="Image/Screenshot_1.png" alt="saudems">
             </figure>
         </section>
+        <div class="search-mobile">
+            <img src="Image/icon-search.png" alt="busca">
+        </div>
         <section class="grid3 info-topo">
             <div id="tel" class="">
                 <p><img src="Image/whatssapp.jpg" alt="chamar no whatsapp"><a
@@ -41,45 +60,61 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#especiais">Especiais</a></li>
                 <li><a href="#noticias">Últimas Noticias</a></li>
-                <li><a href="#editorias">Editorias</a></li>
+                <li><a href="#editorias">Editorias </a></li>
             </ul>
         </nav>
     </header>
     <div class="clear"></div>
 
     <body>
-        <section id="destaques">
-            <div class="news-left">
-                <div class="news1">
-                    <figure>
-                        <img src="Image/download.jpg" alt="banner1">
-                    </figure>
-                    <div class="text-news-left">
-                        <span>Aqui vai o subtítulo da notícia</span>
-                        <h2>Aqui vai um título mais completo da notícia</h2>
+        <section id="destaques" class="column">
+            <!--VISÍVEL SOMENTE PARA DESKTOP- INICIO AQUI -->
+            <div id="desktop-visible">
+                <div class="news-left">
+                    <div class="news1">
+                        <figure>
+                            <img src="Image/download.jpg" alt="banner1">
+                        </figure>
+                        <div class="text-news-left">
+                            <span>Aqui vai o subtítulo da notícia</span>
+                            <h2>Aqui vai um título mais completo da notícia</h2>
+                        </div>
+                    </div>
+                    <div class="news1">
+                        <figure>
+                            <img src="Image/download.jpg" alt="banner2">
+                        </figure>
+                        <div class="text-news-left">
+                            <span>Aqui vai o subtítulo da notícia</span>
+                            <h2>Aqui vai um título mais completo da notícia</h2>
+                        </div>
                     </div>
                 </div>
-                <div class="news1">
+                <div class="news-main">
                     <figure>
-                        <img src="Image/download.jpg" alt="banner2">
+                        <img src="Image/img-destaque.jpg" alt="banner3">
                     </figure>
-                    <div class="text-news-left">
+                    <div class="text-news-main">
                         <span>Aqui vai o subtítulo da notícia</span>
                         <h2>Aqui vai um título mais completo da notícia</h2>
                     </div>
                 </div>
             </div>
-            <div class="news-main">
+            <!--VISÍVEL SOMENTE PARA DESKTOP- FIM AQUI -->
+
+            <!--VISÍVEL SOMENTE PARA MOBILE INICIO AQUI-->
+            <div class="news-main-mobile">
                 <figure>
                     <img src="Image/img-destaque.jpg" alt="banner3">
                 </figure>
-                <div class="text-news-main">
+                <div class="text-news-main-mobile">
                     <span>Aqui vai o subtítulo da notícia</span>
                     <h2>Aqui vai um título mais completo da notícia</h2>
                 </div>
             </div>
+            <!--VISÍVEL SOMENTE PARA MOBILE FIM AQUI-->
         </section>
-        <div id="news">
+        <div id="news" class="column">
             <h2>Útilmas Notícias</h2>
             <div class="last-news">
                 <div class="last-news-date">
@@ -141,6 +176,14 @@
                         </div>
                     </div>
                 </div>
+                <script>
+                    const hamburger = document.querySelector('.hamburger');
+                    const menu = document.querySelector('.menu');
+
+                    hamburger.addEventListener('click', () => {
+                        menu.classList.toggle('open');
+                    });
+                </script>
     </body>
 
 </html>
