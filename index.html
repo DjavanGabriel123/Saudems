@@ -8,65 +8,80 @@
     <link rel="stylesheet" href="Css/style.css">
     <link rel="shortcut icon" type="image.png" href="Image/icon.png">
 </head>
-<div class="container">
-    <header id="saude"><!--TOPO DO SITE-->
-        <section id="form-search" class="grid3">
-            <form id="busca">
-                <input name="q" placeholder="Buscar..." type="text">
-                <input type="submit" name="btn-buscar" value="Buscar">
-            </form>
-        </section>
-        <div class="hamburger">&#9776;</div>
-        <div class="menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#especiais">Especiais</a></li>
-                <li><a href="#noticias">Últimas Noticias</a></li>
-                <li><a href="#editorias">Editorias</a></li>
-                <li class="sub-menu">
-                    <a href="#">Menu 3</a>
-                    <ul>
-                        <li><a href="#">Submenu 1</a></li>
-                        <li><a href="#">Submenu 2</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <section class="grid3 logo">
-            <figure>
-                <img src="Image/Screenshot_1.png" alt="saudems">
-            </figure>
-        </section>
-        <div class="search-mobile">
-            <img src="Image/icon-search.png" alt="busca">
-        </div>
-        <section class="grid3 info-topo">
-            <div id="tel" class="">
-                <p><img src="Image/whatssapp.jpg" alt="chamar no whatsapp"><a
-                        href="tel:+55991263659"><strong>(67)99126-3659</strong></a> </p>
-            </div>
-            <div class="span-pipe">|</div>
-            <div class="" id="data-topo">
-                <p>quinta feira, 24 de agosto de 2023</p>
-            </div>
-            <div class="span-pipe">|</div>
-            <div id="location" class="">
-                <p>Campo Grande</p>
-            </div>
-        </section>
-        <div class="clear"></div>
-        <nav id="navbar">
-            <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#especiais">Especiais</a></li>
-                <li><a href="#noticias">Últimas Noticias</a></li>
-                <li><a href="#editorias">Editorias </a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="clear"></div>
 
-    <body>
+<body>
+    <div class="container">
+        <header id="saude"><!--TOPO DO SITE-->
+            <section id="form-search" class="info-topo grid3">
+                <a id="busca">
+                    <figure>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                            <path
+                                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                        </svg>
+                        Buscar
+                </a>
+                </figure>
+
+                <p class="data">quinta feira, 24 de agosto de 2023</p>
+            </section>
+
+            <div class="hamburger">&#9776;</div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#especiais">Especiais</a></li>
+                    <li><a href="#noticias">Últimas Noticias</a></li>
+                    <li><a href="#editorias">Editorias</a></li>
+                    <li class="sub-menu">
+                        <a href="#">Menu 3</a>
+                        <ul>
+                            <li><a href="#">Submenu 1</a></li>
+                            <li><a href="#">Submenu 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <section class="grid3 logo">
+
+                <figure>
+                    <img src="Image/Screenshot_1.png" alt="saudems">
+                </figure>
+            </section>
+
+            <div class="search-mobile">
+                <img src="Image/icon-search.png" alt="busca">
+            </div>
+
+            <section class="grid3 info-topo">
+                <div id="tel" class="">
+                    <img src="Image/whatssapp.jpg" alt="chamar no whatsapp">
+                    <a href="tel:+55991263659"><strong>(67)99126-3659</strong></a>
+                </div>
+
+                <p id="data-topo">Campo Grande</p>
+                <svg class="temp" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                    <path
+                        d="M480-120q-83 0-141.5-58.5T280-320q0-48 21-89.5t59-70.5v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q38 29 59 70.5t21 89.5q0 83-58.5 141.5T480-120Zm0-80q50 0 85-35t35-85q0-29-12.5-54T552-416l-32-24v-280q0-17-11.5-28.5T480-760q-17 0-28.5 11.5T440-720v280l-32 24q-23 17-35.5 42T360-320q0 50 35 85t85 35Zm0-120Z" />
+                </svg>
+                31º
+
+            </section>
+
+            <div class="clear"></div>
+            <nav id="navbar">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#especiais">Especiais</a></li>
+                    <li><a href="#noticias">Últimas Noticias</a></li>
+                    <li><a href="#editorias">Editorias </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="clear"></div>
         <section id="destaques" class="column">
             <!--VISÍVEL SOMENTE PARA DESKTOP- INICIO AQUI -->
             <div id="desktop-visible">
@@ -79,66 +94,91 @@
                             <span>Aqui vai o subtítulo da notícia</span>
                             <h2>Aqui vai um título mais completo da notícia</h2>
                         </div>
-                    </div>
-                    <div class="news1">
+
                         <figure>
                             <img src="Image/download.jpg" alt="banner2">
                         </figure>
+
                         <div class="text-news-left">
                             <span>Aqui vai o subtítulo da notícia</span>
                             <h2>Aqui vai um título mais completo da notícia</h2>
                         </div>
-                    </div>
-                </div>
-                <div class="news-main">
-                    <figure>
-                        <img src="Image/img-destaque.jpg" alt="banner3">
-                    </figure>
-                    <div class="text-news-main">
-                        <span>Aqui vai o subtítulo da notícia</span>
-                        <h2>Aqui vai um título mais completo da notícia</h2>
+
                     </div>
                 </div>
             </div>
-            <!--VISÍVEL SOMENTE PARA DESKTOP- FIM AQUI -->
 
-            <!--VISÍVEL SOMENTE PARA MOBILE INICIO AQUI-->
-            <div class="news-main-mobile">
+            <div class="news-main">
                 <figure>
                     <img src="Image/img-destaque.jpg" alt="banner3">
                 </figure>
-                <div class="text-news-main-mobile">
+
+                <div class="text-news-main">
                     <span>Aqui vai o subtítulo da notícia</span>
                     <h2>Aqui vai um título mais completo da notícia</h2>
                 </div>
             </div>
-            <!--VISÍVEL SOMENTE PARA MOBILE FIM AQUI-->
-        </section>
-        <div id="news" class="column">
-            <h2>Útilmas Notícias</h2>
-            <div class="last-news">
-                <div class="last-news-date">
-                    <span>11:08</span>
-                </div>
-                <div class="last-news-text">
-                    <p>ESPECIALISTAS EXPLICAM SOBRE GESTAÇÃO</p>
-                    <p><a href="file:///C:/Users/Djavan/Desktop/tarefa/index.html?q=&btn-buscar=Buscar">Ginecologista e
-                            obstetra respondem dúvidas comuns de gestantes</p></a>
-                </div>
+    </div>
+
+    <!--VISÍVEL SOMENTE PARA DESKTOP- FIM AQUI -->
+
+    <!--VISÍVEL SOMENTE PARA MOBILE INICIO AQUI-->
+    <div class="news-main-mobile">
+        <figure>
+            <img src="Image/img-destaque.jpg" alt="banner3">
+        </figure>
+
+        <div class="text-news-main-mobile">
+            <span>Aqui vai o subtítulo da notícia</span>
+            <h2>Aqui vai um título mais completo da notícia</h2>
+        </div>
+    </div>
+    <!--VISÍVEL SOMENTE PARA MOBILE FIM AQUI-->
+    </section>
+
+    <div id="news" class="column">
+        <h2>Útilmas Notícias</h2>
+        <div class="last-news">
+            <div class="last-news-date">
+                <span>11:08</span>
             </div>
+
+            <div class="last-news-text">
+                <p>ESPECIALISTAS EXPLICAM SOBRE GESTAÇÃO</p>
+                <p><a href="file:///C:/Users/Djavan/Desktop/tarefa/index.html?q=&btn-buscar=Buscar">Ginecologista e
+                        obstetra respondem dúvidas comuns de gestantes</p></a>
+            </div>
+        </div>
+
+        <div class="clear">
+        </div>
+        <div class="last-news">
+            <div class="last-news-date">
+                <span>11:08</span>
+            </div>
+
+            <div class="last-news-text">
+                <p>ESPECIALISTAS EXPLICAM SOBRE GESTAÇÃO</p>
+                <p><a href="file:///C:/Users/Djavan/Desktop/tarefa/index.html?q=&btn-buscar=Buscar">Ginecologista e
+                        obstetra respondem dúvidas comuns de gestantes</p></a>
+            </div>
+
             <div class="clear">
             </div>
             <div class="last-news">
                 <div class="last-news-date">
                     <span>11:08</span>
                 </div>
+
                 <div class="last-news-text">
                     <p>ESPECIALISTAS EXPLICAM SOBRE GESTAÇÃO</p>
-                    <p><a href="file:///C:/Users/Djavan/Desktop/tarefa/index.html?q=&btn-buscar=Buscar">Ginecologista e
+                    <p><a href="file:///C:/Users/Djavan/Desktop/tarefa/index.html?q=&btn-buscar=Buscar">Ginecologista
+                            e
                             obstetra respondem dúvidas comuns de gestantes</p></a>
                 </div>
-                <div class="clear">
-                </div>
+
+                <div class="clear"></div>
+
                 <div class="last-news">
                     <div class="last-news-date">
                         <span>11:08</span>
@@ -149,41 +189,30 @@
                                 e
                                 obstetra respondem dúvidas comuns de gestantes</p></a>
                     </div>
-                    <div class="clear">
-                    </div>
+
+                    <div class="clear"></div>
+
                     <div class="last-news">
                         <div class="last-news-date">
                             <span>11:08</span>
                         </div>
+
                         <div class="last-news-text">
                             <p>ESPECIALISTAS EXPLICAM SOBRE GESTAÇÃO</p>
                             <p><a href="file:///C:/Users/Djavan/Desktop/tarefa/index.html?q=&btn-buscar=Buscar">Ginecologista
                                     e
                                     obstetra respondem dúvidas comuns de gestantes</p></a>
                         </div>
-                        <div class="clear">
-                        </div>
-                        <div class="last-news">
-                            <div class="last-news-date">
-                                <span>11:08</span>
-                            </div>
-                            <div class="last-news-text">
-                                <p>ESPECIALISTAS EXPLICAM SOBRE GESTAÇÃO</p>
-                                <p><a href="file:///C:/Users/Djavan/Desktop/tarefa/index.html?q=&btn-buscar=Buscar">Ginecologista
-                                        e
-                                        obstetra respondem dúvidas comuns de gestantes</p></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <script>
-                    const hamburger = document.querySelector('.hamburger');
-                    const menu = document.querySelector('.menu');
 
-                    hamburger.addEventListener('click', () => {
-                        menu.classList.toggle('open');
-                    });
-                </script>
-    </body>
+
+                        <script>
+                            const hamburger = document.querySelector('.hamburger');
+                            const menu = document.querySelector('.menu');
+
+                            hamburger.addEventListener('click', () => {
+                                menu.classList.toggle('open');
+                            });
+                        </script>
+</body>
 
 </html>

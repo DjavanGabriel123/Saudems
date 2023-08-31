@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* Reset de margens e preenchimentos para o corpo */
 /*ATUALIZADA AS 14:43 25/08/2023*/
 * {
@@ -16,12 +17,10 @@ body {
 .container {
   width: 100%;
   height: auto;
-  padding: 50px 0;
 }
 
 header {
   width: 100%;
-  height: 190px;
   border: 0;
   border-bottom: 5px solid #29d123;
 }
@@ -39,7 +38,7 @@ header {
 }
 
 #form-search {
-  height: 80%;
+  height: 10%;
   text-align: left;
   display: table;
 }
@@ -51,6 +50,7 @@ header {
 
 .logo {
   height: 80%;
+  width: 30%;
   text-align: center;
   display: table;
 }
@@ -62,17 +62,29 @@ header {
 }
 
 .info-topo {
-  height: 80%;
+  height: 100%;
   text-align: center;
   display: table;
   font-size: 0.7rem;
+  padding-top: 61px;
+}
+
+.data {
+  color: #c2c2c2;
+  padding-left: 120px;
+  padding-top: 10px;
+}
+#busca{
+  padding-left: 50px;
+  padding-top: 10px;
 }
 
 .info-topo #tel,
 #location,
-#data-topo,
-.span-pipe {
-  display: table-cell;
+#data-topo {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 10px;
   text-align: center;
   vertical-align: middle;
 }
@@ -87,29 +99,28 @@ header {
 
 #tel a {
   text-decoration: none;
-  color: black;
+  color: #c2c2c2;
   text-align: center;
   font-size: 11px;
+  padding-left: 10px;
+  border-right: 1px solid;
+
 }
 
-.span-pipe {
-  color: black;
-  padding: 0 4px;
-}
-
-#data-topo p {
-  padding-bottom: 9px;
+#data-topo {
+  color: #c2c2c2;
   font-weight: bold;
-  color: black;
+  color: #c2c2c2;
   font-size: 11px;
   padding-bottom: 1px;
 }
 
 #location p {
   font-weight: bold;
-  color: black;
+  color: #c2c2c2;
   font-size: 11px;
   padding-bottom: 1px;
+  padding: 10px;
 }
 
 /* Estilos para o menu de navegação */
@@ -117,32 +128,35 @@ header {
   padding: 0px;
   text-align: center;
   display: table;
+  font-size: 15px;
 }
 
 .nav-list {
   list-style: none;
   justify-content: center;
   align-items: center;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .nav-list li {
-  margin: 0 15px;
+  margin: 0 0px;
   display: inline-block;
   font-weight: 300;
+  padding-left: 40px;
 }
 
 .nav-list a {
   text-decoration: none;
-  color: #68962f;
+  color: #065e8a;
   display: block;
-  transition: color 0.3s;
 }
 
 .nav-list a:hover {
   color: #065e8a;
   /* Cor ao passar o mouse */
   -webkit-text-decoration: underline green 2px;
-          text-decoration: underline green 2px;
+  text-decoration: underline green 2px;
 }
 
 #destaques {
@@ -312,33 +326,41 @@ header {
   #form-search {
     display: none;
   }
+
   body {
     padding-left: 0 25px;
     z-index: 1000;
   }
+
   .menu,
   .search-mobile,
   .news-main-mobile {
     display: block;
   }
+
   .container {
     padding: 5px 0;
   }
+
   .logo {
     text-align: center;
     max-height: 80px;
     width: 242px;
     float: left;
   }
+
   .logo img {
     max-width: 90%;
   }
+
   .info-topo {
     display: none;
   }
+
   .menu {
     z-index: 1000;
   }
+
   .menu ul {
     display: none;
     flex-direction: column;
@@ -347,20 +369,25 @@ header {
     left: 0;
     background-color: #eee;
   }
+
   .menu.open ul {
     display: flex;
     z-index: 1000;
   }
+
   .menu li {
     display: block;
     margin: 10px;
   }
+
   .menu li a {
     text-decoration: none;
   }
+
   .menu .sub-menu ul {
     position: static;
   }
+
   .hamburger {
     display: block;
     font-size: 30px;
@@ -368,9 +395,11 @@ header {
     padding-top: 46px;
     padding-left: 10px;
   }
+
   #navbar {
     display: none;
   }
+
   .search-mobile {
     float: left;
     width: 65px;
@@ -378,24 +407,30 @@ header {
     text-align: left;
     cursor: pointer;
   }
+
   .search-mobile img {
     width: 60%;
   }
+
   header {
     height: auto;
   }
+
   .column {
     flex: 1;
   }
+
   #desktop-visible {
     display: none;
   }
+
   .news-main-mobile {
     width: 100%;
     position: relative;
     z-index: 1;
     padding: 5px;
   }
+
   .text-news-main-mobile {
     width: 100%;
     position: absolute;
@@ -403,33 +438,40 @@ header {
     left: 0;
     margin: 0 15px;
   }
+
   .news-main-mobile figure {
     max-width: 86%;
     width: 100%;
     text-align: center;
   }
+
   .news-main-mobile figure img {
     max-width: 100%;
     width: 100%;
     border-radius: 8px;
   }
+
   .text-news-main-mobile span {
     font-size: 1.2rem;
     color: #ffffff;
   }
+
   .text-news-main-mobile h2 {
     color: #ffffff;
   }
+
   #news {
     width: 90%;
     font-size: 10px;
     margin-left: 5px;
   }
+
   #news h2 {
     font-size: 20px;
     color: #065e8a;
     margin-bottom: 10px;
   }
+
   .last-news-text p {
     color: #68962f;
     font-weight: 300;
@@ -438,23 +480,29 @@ header {
     line-height: 1.2;
     margin-top: 8px;
   }
+
   #destaques {
     width: 90%;
     padding-top: 5px;
   }
+
   .last-news-text a {
     font-size: 13px;
   }
+
   .last-news-date {
     color: #000000;
     padding-bottom: 100px;
     /*border: 1px solid;*/
     padding-bottom: 10px;
   }
+
   /* Limpar floats após o conteúdo flutuante */
   .clearfix::after {
     content: "";
     display: table;
     clear: both;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
