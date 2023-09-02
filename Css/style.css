@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* Reset de margens e preenchimentos para o corpo */
 /*ATUALIZADA AS 14:43 25/08/2023*/
 * {
@@ -8,10 +7,21 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #C2C2C2;
+  padding-top: 2px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1;
   background-color: rgba(0, 0, 0, 0);
+}
+body main {
+  max-width: 1200px;
 }
 
 .container {
@@ -22,13 +32,15 @@ body {
 header {
   width: 100%;
   border: 0;
-  border-bottom: 5px solid #29d123;
+  border-bottom: 5px solid #2da129;
+  padding: 0 90px;
+  margin-bottom: 35px;
 }
 
 .grid3 {
   width: 33%;
   height: auto;
-  padding: 10px;
+  padding: 0 0;
   text-align: center;
   float: left;
 }
@@ -49,34 +61,77 @@ header {
 }
 
 .logo {
-  height: 80%;
-  width: 30%;
   text-align: center;
   display: table;
 }
 
 .logo figure {
+  max-width: 30%;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
 
+.logo img {
+  scale: 0.7;
+}
+
 .info-topo {
   height: 100%;
   text-align: center;
-  display: table;
-  font-size: 0.7rem;
-  padding-top: 61px;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  padding-top: 65px;
+}
+.info-topo.direita {
+  justify-content: flex-end;
 }
 
-.data {
-  color: #c2c2c2;
-  padding-left: 120px;
-  padding-top: 10px;
+.busca figure {
+  float: left;
+  display: flex;
 }
-#busca{
-  padding-left: 50px;
-  padding-top: 10px;
+
+.busca svg:hover {
+  animation: bounce 0.9s ease-out;
+}
+
+.busca svg {
+  fill: #065e8a;
+  max-width: 20px;
+  margin-left: 0px;
+}
+
+.busca {
+  float: left;
+  position: relative;
+}
+
+.data-busca p {
+  color: #757575;
+  padding-left: 0px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 8px;
+}
+
+.span-pipe {
+  color: #b3b2b2;
+  margin: 0 0 0 10px;
+}
+
+.data-busca a {
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+  padding-top: 1px;
+  text-decoration: none;
+  color: #065e8a;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .info-topo #tel,
@@ -84,17 +139,28 @@ header {
 #data-topo {
   display: inline-flex;
   align-items: center;
-  padding-left: 10px;
+  padding-right: 15px;
   text-align: center;
   vertical-align: middle;
+}
+
+.temp {
+  display: flex;
+  vertical-align: middle;
+  color: #065E8A;
+  fill: #065E8A;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+  scale: 0.7;
 }
 
 #tel img {
   text-align: center;
   vertical-align: middle;
-  max-width: 20px;
+  max-width: 18px;
   max-height: 20px;
-  margin: 0 5px;
+  margin-right: 7px;
 }
 
 #tel a {
@@ -103,32 +169,35 @@ header {
   text-align: center;
   font-size: 11px;
   padding-left: 10px;
-  border-right: 1px solid;
-
 }
 
-#data-topo {
+#cidade {
   color: #c2c2c2;
+  width: auto;
   font-weight: bold;
   color: #c2c2c2;
   font-size: 11px;
-  padding-bottom: 1px;
+  padding-top: 2px;
+  border-left: 1px solid;
+  padding-left: 10px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 
 #location p {
   font-weight: bold;
   color: #c2c2c2;
   font-size: 11px;
-  padding-bottom: 1px;
+  padding-bottom: 15px;
   padding: 10px;
 }
 
 /* Estilos para o menu de navegação */
 #navbar {
   padding: 0px;
-  text-align: center;
+  text-align: left;
   display: table;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .nav-list {
@@ -136,14 +205,14 @@ header {
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
-  padding-left: 10px;
+  padding-left: 0px;
 }
 
 .nav-list li {
   margin: 0 0px;
   display: inline-block;
   font-weight: 300;
-  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .nav-list a {
@@ -160,14 +229,16 @@ header {
 }
 
 #destaques {
-  width: 80%;
+  width: 70%;
   float: left;
   height: auto;
+  padding: 0 0 0 90px;
 }
 
 .news-left {
   width: 30%;
   float: left;
+  padding-right: 10px;
 }
 
 .news1 {
@@ -175,32 +246,37 @@ header {
   width: 100%;
   height: auto;
   position: relative;
-  margin: 15px;
+  margin: 0px 0px 5px 0;
 }
 
 .text-news-left {
   width: 90%;
   height: 50%;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 0;
   z-index: 10;
   padding: 5px;
 }
 
 .news-left img {
+  width: 100%;
   max-width: 100%;
   border-radius: 8px;
 }
 
+#desktop-visible {
+  padding: 10px 0;
+}
+
 .text-news-left span {
-  font-size: 1rem;
+  font-size: 9px;
   color: #ffffff;
 }
 
 .text-news-left h2 {
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 12px;
 }
 
 .news-left figure {
@@ -215,7 +291,7 @@ header {
   float: left;
   position: relative;
   z-index: 1;
-  padding: 15px 10px 15px 5px;
+  padding: 0 10px 0 0;
 }
 
 .news-main figure {
@@ -234,7 +310,7 @@ header {
   width: 90%;
   max-width: 90%;
   position: absolute;
-  top: 80%;
+  top: 70%;
   left: 0;
   margin: 0 15px;
 }
@@ -249,21 +325,22 @@ header {
 }
 
 #news {
-  width: 20%;
+  width: 30%;
   float: left;
-  margin-top: 15px;
+  margin-top: 10px;
   text-decoration: none;
   font-size: 0.9rem;
+  padding: 0 90px 0 0;
 }
 
 .last-news {
-  border-top: 1px solid #d1d1d1;
-  padding: 5px 0;
+  border-bottom: 1px solid #d1d1d1;
+  padding: 5px 0 5px 0;
 }
 
 .last-news-text a {
   text-decoration: none;
-  font-size: 0.7rem;
+  font-size: 9px;
   color: #212121;
   margin: 0;
   line-height: 1;
@@ -275,7 +352,7 @@ header {
   color: #68962f;
   font-weight: 300;
   margin: 0;
-  font-size: 0.5rem;
+  font-size: 6px;
   line-height: 1.2;
 }
 
@@ -285,21 +362,22 @@ header {
 }
 
 .last-news-date {
-  font-size: 0.7rem;
-  color: #c2c2c2;
-  width: 15%;
+  font-size: 8px;
+  color: #C2C2C2;
+  width: 20%;
   padding: 1px;
   float: left;
-  height: 65px;
+  height: 40px;
 }
 
 #news h2 {
-  font-size: 1.4rem;
+  font-size: 15px;
   color: #065e8a;
+  border-bottom: 1px solid #d1d1d1;
 }
 
 #busca input {
-  padding: 10px 20px;
+  padding: 10px;
   color: #888585;
   border: none;
   border-radius: 5px;
@@ -318,6 +396,41 @@ header {
   display: none;
 }
 
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.2);
+  }
+  20% {
+    transform: scale(1.3);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  80% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 #form-search-mobile {
   display: none;
 }
@@ -326,41 +439,33 @@ header {
   #form-search {
     display: none;
   }
-
   body {
     padding-left: 0 25px;
     z-index: 1000;
   }
-
   .menu,
   .search-mobile,
   .news-main-mobile {
     display: block;
   }
-
   .container {
     padding: 5px 0;
   }
-
   .logo {
     text-align: center;
     max-height: 80px;
-    width: 242px;
+    width: 260px;
     float: left;
   }
-
   .logo img {
-    max-width: 90%;
+    max-width: 100%;
   }
-
   .info-topo {
     display: none;
   }
-
   .menu {
     z-index: 1000;
   }
-
   .menu ul {
     display: none;
     flex-direction: column;
@@ -369,25 +474,20 @@ header {
     left: 0;
     background-color: #eee;
   }
-
   .menu.open ul {
     display: flex;
     z-index: 1000;
   }
-
   .menu li {
     display: block;
     margin: 10px;
   }
-
   .menu li a {
     text-decoration: none;
   }
-
   .menu .sub-menu ul {
     position: static;
   }
-
   .hamburger {
     display: block;
     font-size: 30px;
@@ -395,108 +495,97 @@ header {
     padding-top: 46px;
     padding-left: 10px;
   }
-
   #navbar {
     display: none;
   }
-
   .search-mobile {
     float: left;
     width: 65px;
+    margin-left: 50px;
     padding-top: 40px;
     text-align: left;
     cursor: pointer;
   }
-
   .search-mobile img {
     width: 60%;
   }
-
   header {
+    margin: 0;
     height: auto;
+    padding: 0;
   }
-
   .column {
     flex: 1;
   }
-
   #desktop-visible {
     display: none;
   }
-
   .news-main-mobile {
     width: 100%;
     position: relative;
     z-index: 1;
     padding: 5px;
   }
-
   .text-news-main-mobile {
-    width: 100%;
+    width: 90%;
     position: absolute;
     top: 10%;
     left: 0;
     margin: 0 15px;
   }
-
   .news-main-mobile figure {
-    max-width: 86%;
+    max-width: 100%;
     width: 100%;
     text-align: center;
   }
-
   .news-main-mobile figure img {
     max-width: 100%;
     width: 100%;
     border-radius: 8px;
   }
-
   .text-news-main-mobile span {
     font-size: 1.2rem;
     color: #ffffff;
   }
-
   .text-news-main-mobile h2 {
     color: #ffffff;
   }
-
   #news {
     width: 90%;
     font-size: 10px;
     margin-left: 5px;
+    padding: 0;
   }
-
   #news h2 {
     font-size: 20px;
     color: #065e8a;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
-
+  .last-news {
+    padding: 5px 0 5px 0;
+  }
   .last-news-text p {
     color: #68962f;
     font-weight: 300;
     margin: 0;
     font-size: 11px;
     line-height: 1.2;
-    margin-top: 8px;
+    margin-top: 0px;
   }
-
   #destaques {
-    width: 90%;
+    width: 100%;
+    padding: 0 0 0 0;
     padding-top: 5px;
   }
-
   .last-news-text a {
     font-size: 13px;
   }
-
   .last-news-date {
+    width: 40px;
     color: #000000;
-    padding-bottom: 100px;
+    height: 55px;
     /*border: 1px solid;*/
-    padding-bottom: 10px;
   }
-
   /* Limpar floats após o conteúdo flutuante */
   .clearfix::after {
     content: "";
@@ -504,5 +593,4 @@ header {
     clear: both;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
