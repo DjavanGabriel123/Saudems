@@ -125,13 +125,14 @@ header {
 
 .data-busca p {
   color: #757575;
-  padding-left: 0px;
+  padding-left: 9px;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: inline-block;
   vertical-align: middle;
   padding-top: 8px;
   font-weight: 150;
+  
 }
 
 .data-busca a {
@@ -264,13 +265,12 @@ header {
 }
 
 .text-news-left {
-  width: 90%;
-  height: 50%;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 0;
   z-index: 10;
-  padding: 5px;
+  padding: 15px;
 }
 
 .news-left img {
@@ -291,6 +291,7 @@ header {
 .text-news-left h2 {
   color: #ffffff;
   font-size: 12px;
+  text-shadow: #ffffff;
 }
 
 .news-left figure {
@@ -332,10 +333,12 @@ header {
 .text-news-main span {
   font-size: 1.2rem;
   color: #ffffff;
+  text-shadow: #ffffff;
 }
 
 .text-news-main h2 {
   color: #ffffff;
+  text-shadow: #ffffff;
 }
 
 #news {
@@ -352,7 +355,7 @@ header {
   padding: 5px 0 5px 0;
 }
 
-.last-news-text a {
+.last-news-text a{
   text-decoration: none;
   font-size: 9px;
   color: #212121;
@@ -360,6 +363,14 @@ header {
   line-height: 1;
   font-weight: bold;
   text-align: justify;
+}
+
+.last-news-text p :hover {
+  color: #32ac2e;
+  /* Cor ao passar o mouse */
+  -webkit-text-decoration: underline green 2px;
+  text-decoration: underline green 2px;
+  text-decoration: none;
 }
 
 .last-news-text p {
@@ -396,6 +407,8 @@ header {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  border-left: 1px solid;
+
 }
 
 .hamburger {
@@ -467,12 +480,12 @@ header {
   }
   .logo {
     text-align: center;
-    max-height: 80px;
     width: 260px;
-    float: left;
+  
   }
   .logo img {
-    max-width: 200%;
+    max-width: 250%;
+
   }
   .info-topo {
     display: none;
@@ -506,7 +519,7 @@ header {
     display: block;
     font-size: 30px;
     float: left;
-    padding-top: 46px;
+    padding-top: 56px;
     padding-left: 10px;
   }
   #navbar {
@@ -516,7 +529,7 @@ header {
     float: left;
     width: 65px;
     margin-left: 50px;
-    padding-top: 40px;
+    padding-top: 48px;
     text-align: left;
     cursor: pointer;
   }
