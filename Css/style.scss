@@ -7,6 +7,8 @@
   box-sizing: border-box;
 }
 
+@import "//Css/form-search";
+
 a {
   text-decoration: none;
   color: #C2C2C2;
@@ -23,8 +25,7 @@ body {
   margin: 0 auto
   
   main{
-    max-width: 1200px;
-
+    max-width: 1400px;
   }
 }
 
@@ -37,15 +38,17 @@ header {
   width: 100%;
   border: 0;
   border-bottom: 5px solid #2da129;
-  padding: 0 90px;
+  padding: 0 170px;
   margin-bottom: 35px;
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Poppins', sans-serif;
+  justify-content: space-around;
   
   }
 
 .grid3 {
+  max-width: 33%;
   width: 33%;
   height: auto;
   padding: 0 0;
@@ -55,19 +58,6 @@ header {
 
 .clear {
   clear: both;
-}
-
-#form-search {
-  height: 10%;
-  text-align: left;
-
-  
-  display: table;
-}
-
-#form-search form {
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .logo {
@@ -84,8 +74,9 @@ header {
 
 .logo img{
   scale: 0.7;
-  padding-right: 70px;
   margin-top: 10px;
+  display: flex;
+  align-items: center;
 }
 
   
@@ -95,9 +86,10 @@ header {
   display: flex;
   align-items: center;
   font-size: 11px;
-  padding-top: 65px;
+  padding: 65px 0;
+  
   &.direita{
-    padding-left: 40px;
+    padding-left: 0px;
   }
 }
 
@@ -123,16 +115,31 @@ header {
   position: relative;
 }
 
+.data-busca{
+  width: 100%;
+  text-align: left;
+  height: 20px;
+}
+
 .data-busca p {
-  color: #757575;
+  color: #c2c2c2;
   padding-left: 9px;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: inline-block;
   vertical-align: middle;
   padding-top: 8px;
-  font-weight: 150;
+  font-weight: 300;
   
+}
+
+.divisor{
+  width: 1px;
+  height: 30px;
+  background-color: #faeef5;
+  content:  " ";
+  float: left;
+
 }
 
 .data-busca a {
@@ -141,9 +148,9 @@ header {
   padding-right: 10px;
   padding-top: 1px;
   text-decoration: none;
-  color: #065e8a;
-  font-size: 12px;
-  font-weight: 700;
+  color: #065E8A;
+  font-size: 10px;
+  font-weight: 900;
 
 }
 
@@ -151,9 +158,8 @@ header {
 #location,
 #data-topo {
   display: inline-flex;
-  align-items: center;
-  padding-right: 15px;
-  text-align: center;
+  align-items: right;
+  text-align: right;
   vertical-align: middle;
 }
 
@@ -165,9 +171,7 @@ header {
   font-weight: bold;
   font-size: 24px;
   margin-left: 10px;
-  scale: 0.7;
-  
-
+  scale: 0.8;
 }
 
 #tel img {
@@ -178,12 +182,12 @@ header {
   margin-right: 7px;
 }
 
-#tel a {
+.direita a {
   text-decoration: none;
-  color: #c2c2c2;
-  text-align: center;
+  color: #C2C2C2;
   font-size: 11px;
   padding-left: 10px;
+  margin-right: 10px;
 }
 
 #cidade {
@@ -191,11 +195,11 @@ header {
   font-weight: bold;
   color: #757575;
   font-size: 11px;
-  padding-top: 2px;
+  padding-top: 4px;
   padding-left: 10px;
   font-weight: 700;
-  border-left: 1px solid;
-}
+  height: 20px;
+  }
 
 #location p {
   font-weight: bold;
@@ -243,14 +247,14 @@ header {
 }
 
 #destaques {
-  width: 70%;
+  width: 65%;
   float: left;
   height: auto;
-  padding: 0 0 0 90px;
+  padding: 0 0 0 170px;
 }
 
 .news-left {
-  width: 30%;
+  width: 35%;
   float: left;
   padding-right: 10px;
 }
@@ -286,12 +290,13 @@ header {
 .text-news-left span {
   font-size: 9px;
   color: #ffffff;
+  text-shadow: 1px 1px 5px rgb(114, 104, 104);
 }
 
 .text-news-left h2 {
   color: #ffffff;
-  font-size: 12px;
-  text-shadow: #ffffff;
+  font-size: 10px;
+  text-shadow: 1px 1px 5px rgb(114, 104, 104);
 }
 
 .news-left figure {
@@ -302,22 +307,24 @@ header {
 }
 
 .news-main {
-  width: 70%;
+  width: 65%;
+  height: auto;
   float: left;
   position: relative;
   z-index: 1;
-  padding: 0 10px 0 0;
 }
 
 .news-main figure {
   max-width: 100%;
   width: 100%;
-  text-align: center;
+  height: 100%;
+ 
 }
 
 .news-main figure img {
   max-width: 100%;
   width: 100%;
+  display: flex;
   border-radius: 8px;
 }
 
@@ -345,9 +352,10 @@ header {
   width: 30%;
   float: left;
   margin-top: 10px;
+  margin-left: 10px;
   text-decoration: none;
   font-size: 0.9rem;
-  padding: 0 90px 0 0;
+  padding: 0 170px 0 0;
 }
 
 .last-news {
@@ -391,7 +399,7 @@ header {
   width: 20%;
   padding: 1px;
   float: left;
-  height: 40px;
+  height: 50px;
 }
 
 #news h2 {
@@ -401,15 +409,15 @@ header {
 
 }
 
-#busca input {
+/*#busca input {
   padding: 10px;
   color: #888585;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   border-left: 1px solid;
-
 }
+*/
 
 .hamburger {
   display: none;
