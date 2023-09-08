@@ -22,7 +22,7 @@ body {
   line-height: 1;
   background-color: rgba(0, 0, 0, 0);
   margin: 0 auto main;
-  /*margin-max-width: 1400px;*/
+  margin-max-width: 1400px;
 }
 
 .container {
@@ -33,7 +33,7 @@ body {
 header {
   width: 100%;
   border: 0;
-  border-bottom: 5px solid #2da129;
+  border-bottom: 5px solid #68962f;
   padding: 0 170px;
   margin-bottom: 35px;
   font-weight: 300;
@@ -203,6 +203,7 @@ header {
   text-align: left;
   display: table;
   font-size: 13px;
+  width: 100%;
 }
 
 .nav-list {
@@ -217,7 +218,7 @@ header {
   margin: 0 0px;
   display: inline-block;
   font-weight: 300;
-  padding-right: 40px;
+  margin-right: 25px;
 }
 
 .nav-list a {
@@ -234,6 +235,167 @@ header {
   text-decoration: underline green 2px;
 }
 
+/* INICIO CSS DO SUB-MENU ESPECIAIS */
+#navbar .sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #68962f;
+  z-index: 300;
+  margin: 0 auto;
+  width: 100px;
+  border-radius: 5px;
+  left: 220px;
+  animation: slideDown 0.5s ease-in-out;
+}
+
+#navbar .sub-menu ul {
+  width: 100%;
+}
+
+#navbar .sub-menu li {
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  justify-content: center;
+  border-bottom: solid 1px #ffffff;
+}
+
+#navbar .sub-menu li a {
+  color: #ffffff;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* FIM CSS DO SUB-MENU ESPECIAIS */
+.sub-menu-especiais:after {
+  content: "▼";
+  margin-top: -10px;
+  display: flex;
+  font-size: 7px;
+  float: left;
+  padding-left: 50px;
+  padding-top: 3px;
+  color: #065e8a;
+}
+
+.sub-menu-especiais li {
+  position: relative;
+}
+
+.sub-menu-editorias:after {
+  content: "▼";
+  margin-top: -10px;
+  display: flex;
+  font-size: 7px;
+  float: left;
+  padding-left: 50px;
+  padding-top: 3px;
+  color: #065e8a;
+}
+
+/* INICIO CSS DO SUB-MENU EDITORIAS */
+#navbar .sub-menu2 {
+  display: none;
+  position: absolute;
+  background-color: #68962f;
+  z-index: 300;
+  margin: 0 auto;
+  width: 100px;
+  border-radius: 5px;
+  left: 420px;
+  animation: slideDown 0.5s ease-in-out;
+}
+
+#navbar .sub-menu2 ul {
+  width: 100%;
+}
+
+#navbar .sub-menu2 li {
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  justify-content: center;
+  border-bottom: solid 1px #ffffff;
+}
+
+#navbar .sub-menu2 li a {
+  color: #ffffff;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* FIM CSS DO SUB-MENU EDITORIAS */
+/* INICIO CSS DO SUB-MENU ESPECIAIS */
+#navbar .sub-menu3 {
+  display: none;
+  position: absolute;
+  background-color: #68962f;
+  z-index: 300;
+  margin: 0 auto;
+  width: 100px;
+  border-radius: 5px;
+  left: 1020px;
+  animation: slideDown 0.5s ease-in-out;
+}
+
+#navbar .sub-menu3 ul {
+  width: 100%;
+}
+
+#navbar .sub-menu3 li {
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  justify-content: center;
+  border-bottom: solid 1px #ffffff;
+}
+
+#navbar .sub-menu3 li a {
+  color: #ffffff;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* FIM CSS DO SUB-MENU ESPECIAIS */
+#navbar .sub-menu-editorias .sub-menu {
+  top: 27%;
+  left: 320px;
+}
+
+#navbar .sub-menu-editorias li {
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  margin-left: 13px;
+  justify-content: center;
+  padding-right: 0;
+  border-bottom: solid 1px #ffffff;
+}
+#navbar .sub-menu-editorias li a {
+  color: #ffffff;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.especiais-right {
+  margin-left: 515px;
+  float: right;
+}
+
+.especiais-right:after {
+  content: "▼";
+  margin-top: -10px;
+  font-size: 7px;
+  float: right;
+  padding-left: 50px;
+  padding-top: 3px;
+  color: #065e8a;
+}
+
 #destaques {
   width: 65%;
   float: left;
@@ -245,6 +407,13 @@ header {
   width: 35%;
   float: left;
   padding-right: 10px;
+}
+
+.banner {
+  width: 85%;
+  justify-content: center;
+  padding-left: 170px;
+  padding-bottom: 15px;
 }
 
 .news1 {
@@ -270,6 +439,10 @@ header {
   border-radius: 8px;
 }
 
+.news-left img {
+  filter: brightness(75%);
+}
+
 #desktop-visible {
   padding: 10px 0;
 }
@@ -277,13 +450,11 @@ header {
 .text-news-left span {
   font-size: 9px;
   color: #ffffff;
-  text-shadow: 1px 1px 5px rgb(114, 104, 104);
 }
 
 .text-news-left h2 {
   color: #ffffff;
   font-size: 10px;
-  text-shadow: 1px 1px 5px rgb(114, 104, 104);
 }
 
 .news-left figure {
@@ -314,6 +485,10 @@ header {
   border-radius: 8px;
 }
 
+.news-main figure img {
+  filter: brightness(75%);
+}
+
 .text-news-main {
   width: 90%;
   max-width: 90%;
@@ -326,12 +501,10 @@ header {
 .text-news-main span {
   font-size: 1.2rem;
   color: #ffffff;
-  text-shadow: #ffffff;
 }
 
 .text-news-main h2 {
   color: #ffffff;
-  text-shadow: #ffffff;
 }
 
 #news {
@@ -415,6 +588,16 @@ header {
   display: none;
 }
 
+@keyframes slideDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @keyframes bounce {
   0% {
     transform: scale(1);
@@ -471,11 +654,12 @@ header {
     padding: 5px 0;
   }
   .logo {
-    text-align: center;
     width: 260px;
+    padding-left: 80px;
   }
   .logo img {
-    max-width: 250%;
+    max-width: 210%;
+    scale: 1;
   }
   .info-topo {
     display: none;
@@ -509,7 +693,7 @@ header {
     display: block;
     font-size: 30px;
     float: left;
-    padding-top: 56px;
+    padding-top: 20px;
     padding-left: 10px;
   }
   #navbar {
@@ -517,9 +701,9 @@ header {
   }
   .search-mobile {
     float: left;
-    width: 65px;
-    margin-left: 50px;
-    padding-top: 48px;
+    width: 55px;
+    margin-left: 170px;
+    padding-top: 17px;
     text-align: left;
     cursor: pointer;
   }
@@ -608,6 +792,9 @@ header {
     content: "";
     display: table;
     clear: both;
+  }
+  .banner {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

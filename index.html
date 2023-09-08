@@ -25,7 +25,6 @@
                         d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
             </svg>
                         BUSCAR
-            <!--<span class="span-pipe1">|</span><-->
         </a>
 
             <div class="divisor"></div>
@@ -70,7 +69,6 @@
         
                 (67) 99126-3659
                 </a>
-                <!--<span class="span-pipe2">|</span><-->
 
                 <div class="divisor"></div>
 
@@ -84,18 +82,40 @@
             </section>
 
             <div class="clear"></div>
+
             <nav id="navbar">
                 <ul class="nav-list">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#especiais">Especiais</a></li>
+                <li class="sub-menu-especiais" id="menuPai"><a href="#especiais">Especiais</a>
+                    <li class="sub-menu">
+                        <ul>
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                        </ul>
+                    </li></li>
+                
                 <li><a href="#noticias">Últimas Noticias</a></li>
-                <li><a href="#editorias">Editorias </a></li>
-                </ul>
+                <li class="sub-menu-editorias" id="menuPai-editorias"><a href="#especiais">Editorias</a>
+                    <li class="sub-menu2">
+                        <ul>
+                        <li><a href="#">Editorias 1</a></li>
+                        <li><a href="#">Editorias 2</a></li>
+                        </ul>
+                    </li></li>
+
+                    <li class="especiais-right" id="menuPai-especiais"><a href="#especiais2">Especiais</a></li>
+                    <li class="sub-menu3">
+                        <ul>
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                        </ul>
             </nav>
     </header>
     </div>
 
             <div class="clear"></div>
+
+            <img src="Image/banner-1280x100.gif" class="banner">
 
         <main>
             <section id="destaques" class="column">
@@ -140,7 +160,7 @@
 
                 <!--VISÍVEL SOMENTE PARA MOBILE INICIO AQUI-->
             <div class="news-main-mobile">
-                    
+                                    
                 <figure>
                     <img src="Image/img-destaque.jpg" alt="banner3">
                 </figure>
@@ -242,6 +262,33 @@
 
     hamburger.addEventListener('click', () => {
     menu.classList.toggle('open');
+});
+
+const menuPai1 = document.getElementById('menuPai');
+
+        menuPai1.addEventListener('click', function (e) {
+            e.preventDefault();
+            const submenu = this.nextElementSibling;
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+
+
+    
+        const menuPaiEditorias = document.getElementById('menuPai-editorias');
+
+        menuPaiEditorias.addEventListener('click', function (e) {
+            e.preventDefault();
+            const submenu2 = this.nextElementSibling;
+            submenu2.style.display = submenu2.style.display === 'block' ? 'none' : 'block';
+        });
+
+        const menuPaiEspeciais = document.getElementById('menuPai-especiais');
+
+        menuPaiEspeciais.addEventListener('click', function (e) {
+        e.preventDefault();
+        const submenu3 = this.nextElementSibling;
+        submenu3.style.display = submenu3.style.display === 'block' ? 'none' : 'block';
 });
 </script>
 </body>
