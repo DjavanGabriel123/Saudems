@@ -246,6 +246,7 @@ header {
   border-radius: 5px;
   left: 220px;
   animation: slideDown 0.5s ease-in-out;
+  margin-top: 8px;
 }
 
 #navbar .sub-menu ul {
@@ -255,7 +256,7 @@ header {
 #navbar .sub-menu li {
   display: block;
   width: 100%;
-  padding: 5px 0;
+  padding: 8px 0;
   text-align: center;
   justify-content: center;
   border-bottom: solid 1px #ffffff;
@@ -305,6 +306,7 @@ header {
   border-radius: 5px;
   left: 420px;
   animation: slideDown 0.5s ease-in-out;
+  margin-top: 8px;
 }
 
 #navbar .sub-menu2 ul {
@@ -314,7 +316,7 @@ header {
 #navbar .sub-menu2 li {
   display: block;
   width: 100%;
-  padding: 5px 0;
+  padding: 8px 0;
   text-align: center;
   justify-content: center;
   border-bottom: solid 1px #ffffff;
@@ -338,6 +340,7 @@ header {
   border-radius: 5px;
   left: 1020px;
   animation: slideDown 0.5s ease-in-out;
+  margin-top: 8px;
 }
 
 #navbar .sub-menu3 ul {
@@ -347,7 +350,7 @@ header {
 #navbar .sub-menu3 li {
   display: block;
   width: 100%;
-  padding: 5px 0;
+  padding: 8px 0;
   text-align: center;
   justify-content: center;
   border-bottom: solid 1px #ffffff;
