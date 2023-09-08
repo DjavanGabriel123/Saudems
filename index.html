@@ -1,189 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SaúdeMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="Css/style.css">
     <link rel="shortcut icon" type="image.png" href="Image/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Poppins:ital,wght@0,100;0,400;1,400;1,600&display=swap" rel="stylesheet">
 </head>
-<div class="container">
+
+<body>
+    <div class="container">
     <header id="saude"><!--TOPO DO SITE-->
-        <section id="form-search" class="grid3">
-            <form id="busca">
-                <input name="q" placeholder="Buscar..." type="text">
-                <input type="submit" name="btn-buscar" value="Buscar">
-            </form>
+        <section id="form-search" class="info-topo grid3">
+        <div class="data-busca">
+        <a class="busca">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path
+                        d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+            </svg>
+                        BUSCAR
+        </a>
+
+            <div class="divisor"></div>
+        
+        <div class="data">
+        <p>quinta feira, 24 de agosto de 2023</p>
+        </div>
+        </div>
         </section>
+
         <div class="hamburger">&#9776;</div>
         <div class="menu">
             <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#especiais">Especiais</a></li>
+            <li><a href="#noticias">Últimas Noticias</a></li>
+            <li><a href="#editorias">Editorias</a></li>
+
+            <li class="sub-menu">
+            <a href="#">Menu 3</a>
+            <ul>
+            <li><a href="#">Submenu 1</a></li>
+            <li><a href="#">Submenu 2</a></li>
+            </ul>
+            </li>
+            </ul>
+            </div>
+
+            <section class="grid3 logo">
+                <figure>
+                    <img src="Image/Screenshot_1.png" alt="saudems">
+                </figure>
+            </section>
+
+            <div class="search-mobile">
+                <img src="Image/icon-search.png" alt="busca">
+            </div>
+
+            <section class="grid3 info-topo direita">
+                <a href="tel:+55991263659" id="tel">
+                <img src="Image/whatssapp.jpg" alt="chamar no whatsapp">
+        
+                (67) 99126-3659
+                </a>
+
+                <div class="divisor"></div>
+
+                <p id="cidade">Campo Grande</p>
+
+            <div class="temp">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px"><g><path d="M0,0h24v24H0V0z" fill="none"></path></g><g><path d="M15,13V5c0-1.66-1.34-3-3-3S9,3.34,9,5v8c-1.21,0.91-2,2.37-2,4c0,2.76,2.24,5,5,5s5-2.24,5-5C17,15.37,16.21,13.91,15,13z M11,11V5c0-0.55,0.45-1,1-1s1,0.45,1,1v1h-1v1h1v1v1h-1v1h1v1H11z"></path></g></svg>
+                    29º
+            </div>
+
+            </section>
+
+            <div class="clear"></div>
+
+            <nav id="navbar">
+                <ul class="nav-list">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#especiais">Especiais</a></li>
-                <li><a href="#noticias">Últimas Noticias</a></li>
-                <li><a href="#editorias">Editorias</a></li>
-                <li class="sub-menu">
-                    <a href="#">Menu 3</a>
-                    <ul>
+                <li class="sub-menu-especiais" id="menuPai"><a href="#especiais">Especiais</a>
+                    <li class="sub-menu">
+                        <ul>
                         <li><a href="#">Submenu 1</a></li>
                         <li><a href="#">Submenu 2</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <section class="grid3 logo">
-            <figure>
-                <img src="Image/Screenshot_1.png" alt="saudems">
-            </figure>
-        </section>
-        <div class="search-mobile">
-            <img src="Image/icon-search.png" alt="busca">
-        </div>
-        <section class="grid3 info-topo">
-            <div id="tel" class="">
-                <p><img src="Image/whatssapp.jpg" alt="chamar no whatsapp"><a
-                        href="tel:+55991263659"><strong>(67)99126-3659</strong></a> </p>
-            </div>
-            <div class="span-pipe">|</div>
-            <div class="" id="data-topo">
-                <p>quinta feira, 24 de agosto de 2023</p>
-            </div>
-            <div class="span-pipe">|</div>
-            <div id="location" class="">
-                <p>Campo Grande</p>
-            </div>
-        </section>
-        <div class="clear"></div>
-        <nav id="navbar">
-            <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#especiais">Especiais</a></li>
+                        </ul>
+                    </li></li>
+                
                 <li><a href="#noticias">Últimas Noticias</a></li>
-                <li><a href="#editorias">Editorias </a></li>
-            </ul>
-        </nav>
+                <li class="sub-menu-editorias" id="menuPai-editorias"><a href="#especiais">Editorias</a>
+                    <li class="sub-menu2">
+                        <ul>
+                        <li><a href="#">Editorias 1</a></li>
+                        <li><a href="#">Editorias 2</a></li>
+                        </ul>
+                    </li></li>
+
+                    <li class="especiais-right" id="menuPai-especiais"><a href="#especiais2">Especiais</a></li>
+                    <li class="sub-menu3">
+                        <ul>
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                        </ul>
+            </nav>
     </header>
-    <div class="clear"></div>
+    </div>
 
-    <body>
-        <section id="destaques" class="column">
-            <!--VISÍVEL SOMENTE PARA DESKTOP- INICIO AQUI -->
+            <div class="clear"></div>
+
+            <img src="Image/banner-1280x100.gif" class="banner">
+
+        <main>
+            <section id="destaques" class="column">
+                <!--VISÍVEL SOMENTE PARA DESKTOP- INICIO AQUI -->
             <div id="desktop-visible">
-                <div class="news-left">
-                    <div class="news1">
-                        <figure>
-                            <img src="Image/download.jpg" alt="banner1">
-                        </figure>
-                        <div class="text-news-left">
-                            <span>Aqui vai o subtítulo da notícia</span>
-                            <h2>Aqui vai um título mais completo da notícia</h2>
-                        </div>
-                    </div>
-                    <div class="news1">
-                        <figure>
-                            <img src="Image/download.jpg" alt="banner2">
-                        </figure>
-                        <div class="text-news-left">
-                            <span>Aqui vai o subtítulo da notícia</span>
-                            <h2>Aqui vai um título mais completo da notícia</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="news-main">
-                    <figure>
-                        <img src="Image/img-destaque.jpg" alt="banner3">
-                    </figure>
-                    <div class="text-news-main">
-                        <span>Aqui vai o subtítulo da notícia</span>
-                        <h2>Aqui vai um título mais completo da notícia</h2>
-                    </div>
-                </div>
-            </div>
-            <!--VISÍVEL SOMENTE PARA DESKTOP- FIM AQUI -->
-
-            <!--VISÍVEL SOMENTE PARA MOBILE INICIO AQUI-->
-            <div class="news-main-mobile">
+            <div class="news-left">
+            <div class="news1">
                 <figure>
-                    <img src="Image/img-destaque.jpg" alt="banner3">
+                <img src="Image/download.jpg" alt="banner1">
                 </figure>
-                <div class="text-news-main-mobile">
+                            
+                <div class="text-news-left">
+                <span>Aqui vai o subtítulo da notícia</span>
+                <h2>Aqui vai um título mais completo da notícia</h2>
+            </div>
+            </div>
+
+            <div class="news1">
+                <figure>
+                <img src="Image/download.jpg" alt="banner1">
+                </figure>
+                            
+                <div class="text-news-left">
+                <span>Aqui vai o subtítulo da notícia</span>
+                <h2>Aqui vai um título mais completo da notícia</h2>
+            </div>
+            </div>
+            </div>
+       
+            <div class="news-main">
+                <figure>
+                <img src="Image/close-up-do-programador-segurando-o-telefone.jpg" alt="banner3">
+                </figure>
+                <div class="text-news-main">
                     <span>Aqui vai o subtítulo da notícia</span>
                     <h2>Aqui vai um título mais completo da notícia</h2>
                 </div>
             </div>
-            <!--VISÍVEL SOMENTE PARA MOBILE FIM AQUI-->
-        </section>
-        <div id="news" class="column">
-            <h2>Útilmas Notícias</h2>
-            <div class="last-news">
-                <div class="last-news-date">
-                    <span>11:08</span>
-                </div>
-                <div class="last-news-text">
-                    <p>ESPECIALISTAS EXPLICAM SOBRE GESTAÇÃO</p>
-                    <p><a href="file:///C:/Users/Djavan/Desktop/tarefa/index.html?q=&btn-buscar=Buscar">Ginecologista e
-                            obstetra respondem dúvidas comuns de gestantes</p></a>
-                </div>
             </div>
-            <div class="clear">
+           
+                <!--VISÍVEL SOMENTE PARA DESKTOP- FIM AQUI -->
+
+                <!--VISÍVEL SOMENTE PARA MOBILE INICIO AQUI-->
+            <div class="news-main-mobile">
+                                    
+                <figure>
+                    <img src="Image/img-destaque.jpg" alt="banner3">
+                </figure>
+            <div class="text-news-main-mobile">
+                    <span>Aqui vai o subtítulo da notícia</span>
+                    <h2>Aqui vai um título mais completo da notícia</h2>
             </div>
+            </div>        
+                <!--VISÍVEL SOMENTE PARA MOBILE FIM AQUI-->
+            </section>
+            
+            <aside id="news" class="column">
+                <h2>Útilmas Notícias</h2>
             <div class="last-news">
-                <div class="last-news-date">
+            <div class="last-news-date">
                     <span>11:08</span>
-                </div>
-                <div class="last-news-text">
-                    <p>ESPECIALISTAS EXPLICAM SOBRE GESTAÇÃO</p>
-                    <p><a href="file:///C:/Users/Djavan/Desktop/tarefa/index.html?q=&btn-buscar=Buscar">Ginecologista e
-                            obstetra respondem dúvidas comuns de gestantes</p></a>
-                </div>
-                <div class="clear">
-                </div>
-                <div class="last-news">
-                    <div class="last-news-date">
-                        <span>11:08</span>
-                    </div>
-                    <div class="last-news-text">
-                        <p>ESPECIALISTAS EXPLICAM SOBRE GESTAÇÃO</p>
-                        <p><a href="file:///C:/Users/Djavan/Desktop/tarefa/index.html?q=&btn-buscar=Buscar">Ginecologista
-                                e
-                                obstetra respondem dúvidas comuns de gestantes</p></a>
-                    </div>
-                    <div class="clear">
-                    </div>
-                    <div class="last-news">
-                        <div class="last-news-date">
-                            <span>11:08</span>
-                        </div>
-                        <div class="last-news-text">
-                            <p>ESPECIALISTAS EXPLICAM SOBRE GESTAÇÃO</p>
-                            <p><a href="file:///C:/Users/Djavan/Desktop/tarefa/index.html?q=&btn-buscar=Buscar">Ginecologista
-                                    e
-                                    obstetra respondem dúvidas comuns de gestantes</p></a>
-                        </div>
-                        <div class="clear">
-                        </div>
-                        <div class="last-news">
-                            <div class="last-news-date">
-                                <span>11:08</span>
-                            </div>
-                            <div class="last-news-text">
-                                <p>ESPECIALISTAS EXPLICAM SOBRE GESTAÇÃO</p>
-                                <p><a href="file:///C:/Users/Djavan/Desktop/tarefa/index.html?q=&btn-buscar=Buscar">Ginecologista
-                                        e
-                                        obstetra respondem dúvidas comuns de gestantes</p></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <script>
-                    const hamburger = document.querySelector('.hamburger');
-                    const menu = document.querySelector('.menu');
+            </div>
+    
+            <div class="last-news-text">
+                <p>ESPECIALISTAS EXPLICAM SOBRE GESTAÇÃO</p>
+                <p><a href="file:///C:/Users/Djavan/Desktop/tarefa/index.html?q=&btn-buscar=Buscar">Ginecologista e
+                    obstetra respondem dúvidas comuns de gestantes</p></a>
+            </div>
+            </div>
 
-                    hamburger.addEventListener('click', () => {
-                        menu.classList.toggle('open');
-                    });
-                </script>
-    </body>
+            <div class="clear"></div>
+                
+            <div class="last-news">
+            <div class="last-news-date">
+                <span>11:08</span>
+            </div>
 
+    
+            <div class="last-news-text">
+                <p>ESPECIALISTAS EXPLICAM SOBRE GESTAÇÃO</p>
+                <p><a href="file:///C:/Users/Djavan/Desktop/tarefa/index.html?q=&btn-buscar=Buscar">Ginecologista
+                    e
+                    obstetra respondem dúvidas comuns de gestantes</p></a>
+            </div>
+            </div>
+
+            <div class="clear"></div>
+                
+            <div class="last-news">
+            <div class="last-news-date">
+                <span>11:08</span>
+            </div>
+
+    
+            <div class="last-news-text">
+                <p>ESPECIALISTAS EXPLICAM SOBRE GESTAÇÃO</p>
+                <p><a href="file:///C:/Users/Djavan/Desktop/tarefa/index.html?q=&btn-buscar=Buscar">Ginecologista
+                    e
+                    obstetra respondem dúvidas comuns de gestantes</p></a>
+            </div>
+            </div>
+
+            <div class="clear"></div>
+                
+            <div class="last-news">
+            <div class="last-news-date">
+                <span>11:08</span>
+            </div>
+    
+            <div class="last-news-text">
+                <p>ESPECIALISTAS EXPLICAM SOBRE GESTAÇÃO</p>
+                <p><a href="file:///C:/Users/Djavan/Desktop/tarefa/index.html?q=&btn-buscar=Buscar">Ginecologista
+                    e
+                    obstetra respondem dúvidas comuns de gestantes</p></a>
+            </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="last-news">
+            <div class="last-news-date">
+                <span>11:08</span>
+            </div>
+
+            <div class="last-news-text">
+                <p>ESPECIALISTAS EXPLICAM SOBRE GESTAÇÃO</p>
+                <p><a href="file:///C:/Users/Djavan/Desktop/tarefa/index.html?q=&btn-buscar=Buscar">Ginecologista
+                    e
+                    obstetra respondem dúvidas comuns de gestantes</p></a>
+            </div>
+            </div>
+
+            <div class="clear"></div>
+
+            </aside>
+        </main>
+</body>
+        
+
+    
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+
+    hamburger.addEventListener('click', () => {
+    menu.classList.toggle('open');
+});
+
+const menuPai1 = document.getElementById('menuPai');
+
+        menuPai1.addEventListener('click', function (e) {
+            e.preventDefault();
+            const submenu = this.nextElementSibling;
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+
+
+    
+        const menuPaiEditorias = document.getElementById('menuPai-editorias');
+
+        menuPaiEditorias.addEventListener('click', function (e) {
+            e.preventDefault();
+            const submenu2 = this.nextElementSibling;
+            submenu2.style.display = submenu2.style.display === 'block' ? 'none' : 'block';
+        });
+
+        const menuPaiEspeciais = document.getElementById('menuPai-especiais');
+
+        menuPaiEspeciais.addEventListener('click', function (e) {
+        e.preventDefault();
+        const submenu3 = this.nextElementSibling;
+        submenu3.style.display = submenu3.style.display === 'block' ? 'none' : 'block';
+});
+</script>
+</body>
 </html>
