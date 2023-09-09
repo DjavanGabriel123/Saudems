@@ -407,9 +407,20 @@ header {
 }
 
 .news-left {
-  width: 35%;
+  width: 34%;
   float: left;
   padding-right: 10px;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.13), rgba(0, 0, 0, 0.856));
+  pointer-events: none; /* Evita que o degradê interfira com os elementos subjacentes */
+  border-radius: 8px;
 }
 
 .banner {
@@ -424,7 +435,7 @@ header {
   width: 100%;
   height: auto;
   position: relative;
-  margin: 0px 0px 5px 0;
+  margin: 0px 0px 10px 0;
 }
 
 .text-news-left {
@@ -440,10 +451,6 @@ header {
   width: 100%;
   max-width: 100%;
   border-radius: 8px;
-}
-
-.news-left img {
-  filter: brightness(75%);
 }
 
 #desktop-visible {
@@ -589,6 +596,47 @@ header {
 .search-mobile,
 .news-main-mobile {
   display: none;
+}
+
+.button-news {
+  padding: 12px 1px;
+  width: 100%;
+  color: #065e8a;
+  background-color: white;
+  border: 1px solid blue;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 14px 0;
+  border-radius: 4px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.news-down {
+  float: left;
+  width: 210px;
+  float: left;
+  margin-top: 10px;
+}
+
+.margin-right {
+  margin-right: 14px;
+}
+
+.news-down img {
+  border-radius: 4px;
+  max-width: 100%;
+  scale: 1;
+}
+
+.news-down-text {
+  font-size: 15px;
+}
+
+.button-news:hover {
+  text-decoration: none;
+  background-color: #065e8a;
+  color: white;
 }
 
 @keyframes slideDown {
