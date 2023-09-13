@@ -819,7 +819,7 @@ header {
   left: 0;
   z-index: 10;
   padding: 10px;
-  text-align: justify;
+  text-align: left;
 
 }
 
@@ -986,7 +986,7 @@ header {
 
   .logo img {
     max-width: 210%;
-    scale: 1.2;
+    scale: 1.0;
   }
 
   .info-topo {
@@ -1322,7 +1322,7 @@ header {
   }
 
   .button-colunistas {
-    width: 100%;
+    width: 80%;
 
   }
 }

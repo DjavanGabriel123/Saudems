@@ -775,7 +775,7 @@ header {
   left: 0;
   z-index: 10;
   padding: 10px;
-  text-align: justify;
+  text-align: left;
 }
 
 .text-video-destaque h4 {
@@ -909,7 +909,7 @@ header {
   }
   .logo img {
     max-width: 210%;
-    scale: 1.2;
+    scale: 1;
   }
   .info-topo {
     display: none;
@@ -1179,7 +1179,7 @@ header {
     border-bottom: 1px solid #dfd9d9;
   }
   .button-colunistas {
-    width: 100%;
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */
