@@ -664,10 +664,16 @@ header {
 .banner-last {
   border-top: 1px solid #c2c2c2;
   border-bottom: 1px solid #c2c2c2;
-  width: 100%;
   margin-top: 50px;
 }
-.banner-last .last-banner {
+
+.banner-last img {
+  width: 80%;
+  padding-top: 15px;
+  padding-left: 300px;
+  padding-bottom: 15px;
+}
+.banner-last img .last-banner {
   width: 55%;
   margin-left: 290px;
   padding-top: 20px;
@@ -743,8 +749,8 @@ header {
 }
 .videos h3 {
   color: #fff;
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
 }
 
 .video-destaque {
@@ -788,7 +794,7 @@ header {
   margin-top: 20px;
   font-size: 20px;
   font-weight: 900;
-  width: 100%;
+  width: 80%;
   margin-bottom: 10px;
   border-bottom: 1px solid #dfd9d9;
   padding-bottom: 10px;
@@ -820,7 +826,7 @@ header {
 }
 
 .colunista {
-  width: 100%;
+  width: 80%;
   height: 50px;
   margin-top: 20px;
   border-bottom: 1px solid #dfd9d9;
@@ -884,8 +890,10 @@ header {
     display: none;
   }
   body {
-    padding-left: 0 25px;
+    padding-left: 0px;
     z-index: 1000;
+    width: 92%;
+    height: auto;
   }
   .menu,
   .search-mobile,
@@ -901,7 +909,7 @@ header {
   }
   .logo img {
     max-width: 210%;
-    scale: 1;
+    scale: 1.2;
   }
   .info-topo {
     display: none;
@@ -944,7 +952,7 @@ header {
   .search-mobile {
     float: left;
     width: 55px;
-    margin-left: 170px;
+    margin-left: 160px;
     padding-top: 17px;
     text-align: left;
     cursor: pointer;
@@ -1049,7 +1057,129 @@ header {
     border-top: 1px solid #dfd9d9;
     border-bottom: 1px solid #dfd9d9;
     margin-left: 0;
-    min-height: 120px;
+    min-height: 325px;
+    padding: 8px;
+  }
+  .espaco-publicitario h2 {
+    color: #065e8a;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 900;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 30px;
+  }
+  .publicitario figure {
+    width: 90%;
+    margin-left: 23px;
+    display: block;
+  }
+  img {
+    border-radius: 10px;
+  }
+  .text-publicitario {
+    width: 100%;
+    padding: 0px 15px;
+  }
+  .banner {
+    width: 100%;
+  }
+  .videos {
+    width: 100%;
+    margin-left: 10px;
+    float: left;
+  }
+  .videos h4 {
+    color: #065e8a;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 900;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dfd9d9;
+    padding: 5px 10px;
+  }
+  .videos h3 {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .video-destaque {
+    width: 95%;
+    position: relative;
+    min-height: 140px;
+  }
+  .video-destaque figure {
+    width: 100%;
+  }
+  .video-destaque img {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+    scale: 1;
+  }
+  .text-video-destaque {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 130px;
+    z-index: 10;
+    padding: 10px;
+    text-align: left;
+  }
+  .text-video-destaque h4 {
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 3px;
+  }
+  .colunistas {
+    width: 100%;
+    margin-left: 10px;
+    float: left;
+  }
+  .colunistas h4 {
+    color: #065e8a;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 900;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dfd9d9;
+    padding: 5px 10px;
+  }
+  .colunistas h6 {
+    color: #68962F;
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+  .colunistas p {
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .colunistas figure {
+    float: left;
+    width: 80px;
+    margin: 0 10px 0 0;
+  }
+  .colunistas img {
+    border-radius: 50px;
+    width: 100%;
+  }
+  .text-colunistas {
+    float: left;
+    width: 70%;
+    margin-top: 20px;
+  }
+  .colunista {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    border-bottom: 1px solid #dfd9d9;
+  }
+  .button-colunistas {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
