@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   color: #C2C2C2;
@@ -19,8 +24,10 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1;
   background-color: rgba(0, 0, 0, 0);
-  margin: 0 auto main;
-  margin-max-width: 1400px;
+  margin: 0 auto;
+}
+body main {
+  max-width: 1400px;
 }
 
 .container {
@@ -54,22 +61,22 @@ header {
 }
 
 .logo {
+  max-width: 70%;
+  fill: #68962f;
+  margin-top: 18px;
+  padding-left: 20px;
   text-align: center;
   display: table;
+  scale: 0.6;
 }
 
-.logo figure {
-  max-width: 30%;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
+.logo svg {
+  width: 100%;
+  fill: #065e8a;
 }
 
-.logo img {
-  scale: 0.7;
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
+.logo svg .simboloLogo {
+  fill: #68962f;
 }
 
 .info-topo {
@@ -410,7 +417,7 @@ header {
   padding-right: 10px;
 }
 
-.image-overlay {
+.image-overlay, .image-overlay-videos {
   position: absolute;
   top: 0;
   left: 0;
@@ -588,7 +595,7 @@ header {
 .hamburger {
   display: none;
   cursor: pointer;
-  color: #29d123;
+  color: #86c23c;
 }
 
 .menu,
@@ -707,6 +714,7 @@ header {
 
 .publicitario h3 {
   font-size: 18px;
+  margin-top: 5px;
 }
 
 .img-publicitario {
@@ -749,7 +757,7 @@ header {
 }
 .videos h3 {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1;
 }
 
@@ -765,16 +773,15 @@ header {
   width: 100%;
   border-radius: 4px;
   margin-top: 10px;
-  scale: 1;
 }
 
 .text-video-destaque {
   width: 100%;
   position: absolute;
-  top: 40%;
+  bottom: 0;
   left: 0;
   z-index: 10;
-  padding: 10px;
+  padding: 15px;
   text-align: left;
 }
 
@@ -881,10 +888,6 @@ header {
     transform: scale(1);
   }
 }
-#form-search-mobile {
-  display: none;
-}
-
 @media (max-width: 768px) {
   #form-search {
     display: none;
@@ -892,7 +895,7 @@ header {
   body {
     padding-left: 0px;
     z-index: 1000;
-    width: 92%;
+    width: 100%;
     height: auto;
   }
   .menu,
@@ -904,12 +907,16 @@ header {
     padding: 5px 0;
   }
   .logo {
-    width: 260px;
-    padding-left: 80px;
+    max-width: 100%;
+    width: 50%;
+    margin-left: 40px;
+    text-align: center;
+    display: table;
+    float: left;
+    margin-top: -12px;
   }
-  .logo img {
-    max-width: 210%;
-    scale: 1;
+  .logo svg {
+    scale: 0.8;
   }
   .info-topo {
     display: none;
@@ -943,7 +950,7 @@ header {
     display: block;
     font-size: 30px;
     float: left;
-    padding-top: 20px;
+    padding-top: 5px;
     padding-left: 10px;
   }
   #navbar {
@@ -951,19 +958,21 @@ header {
   }
   .search-mobile {
     float: left;
-    width: 55px;
-    margin-left: 160px;
-    padding-top: 17px;
+    width: 30px;
+    padding-top: 5px;
     text-align: left;
     cursor: pointer;
+    margin-left: 60px;
   }
-  .search-mobile img {
-    width: 60%;
+  .search-mobile svg {
+    fill: #0884c2;
+    float: left;
+    scale: 0.8;
   }
   header {
-    margin: 0;
-    height: auto;
-    padding: 0;
+    margin: 10px;
+    height: 70px;
+    padding: 0px 10px;
   }
   .column {
     flex: 1;
@@ -975,23 +984,24 @@ header {
     width: 100%;
     position: relative;
     z-index: 1;
-    padding: 5px;
+    padding: 0px;
   }
   .text-news-main-mobile {
-    width: 90%;
+    width: 320px;
     position: absolute;
-    top: 10%;
-    left: 0;
+    bottom: 10px;
+    left: 20px;
     margin: 0 15px;
+    color: #fff;
+    z-index: 99;
   }
   .news-main-mobile figure {
     max-width: 100%;
-    width: 100%;
     text-align: center;
   }
   .news-main-mobile figure img {
     max-width: 100%;
-    width: 100%;
+    width: 356px;
     border-radius: 8px;
   }
   .text-news-main-mobile span {
@@ -1000,12 +1010,13 @@ header {
   }
   .text-news-main-mobile h2 {
     color: #ffffff;
+    padding-top: 10px;
   }
   #news {
-    width: 90%;
+    width: 350px;
     font-size: 10px;
-    margin-left: 5px;
-    padding: 0;
+    margin-left: 30px;
+    padding: 10px 0;
   }
   #news h2 {
     font-size: 20px;
@@ -1053,7 +1064,6 @@ header {
   .publicitario {
     width: 100%;
     height: auto;
-    padding: 10px 0px;
     border-top: 1px solid #dfd9d9;
     border-bottom: 1px solid #dfd9d9;
     margin-left: 0;
@@ -1102,16 +1112,19 @@ header {
   }
   .videos h3 {
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
   }
   .video-destaque {
-    width: 95%;
+    width: 100%;
     position: relative;
     min-height: 140px;
+    padding: 8px;
   }
   .video-destaque figure {
-    width: 100%;
+    width: 90%;
+    margin-left: 13px;
+    display: block;
   }
   .video-destaque img {
     width: 100%;
@@ -1120,12 +1133,12 @@ header {
     scale: 1;
   }
   .text-video-destaque {
-    width: 100%;
+    width: 320px;
     position: absolute;
-    left: 0;
-    top: 130px;
+    left: 35px;
+    top: 80px;
     z-index: 10;
-    padding: 10px;
+    padding: 0px;
     text-align: left;
   }
   .text-video-destaque h4 {
@@ -1180,6 +1193,51 @@ header {
   }
   .button-colunistas {
     width: 80%;
+    color: #065e8a;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 800;
+    margin: 14px 35px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 10px;
+    border-radius: 10px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+  .banner-last {
+    width: 100%;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    margin-top: 50px;
+  }
+  .banner-last img {
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+  }
+  .image-overlay-videos, .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 356px;
+    height: 100%;
+    margin-left: 18px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+    pointer-events: none;
+    /* Evita que o degradê interfira com os elementos subjacentes */
+    border-radius: 8px;
+    z-index: 6;
+  }
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: 356px;
+    height: 100%;
+    margin-left: 18px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+    pointer-events: none;
+    /* Evita que o degradê interfira com os elementos subjacentes */
+    border-radius: 8px;
+    z-index: 6;
+  }
+}/*# sourceMappingURL=style.css.map */
