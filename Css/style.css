@@ -29,10 +29,23 @@ body {
 body main {
   max-width: 1400px;
 }
+@media (max-width: 768px) {
+  body {
+    padding-left: 0px;
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+  }
+}
 
 .container {
   width: 100%;
   height: auto;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 5px 0;
+  }
 }
 
 header {
@@ -45,6 +58,13 @@ header {
   font-family: "Montserrat", sans-serif;
   font-family: "Poppins", sans-serif;
   justify-content: space-around;
+}
+@media (max-width: 768px) {
+  header {
+    margin: 0px;
+    height: 70px;
+    padding: 0px 10px;
+  }
 }
 
 .grid3 {
@@ -89,6 +109,11 @@ header {
 }
 .info-topo.direita {
   padding-left: 0px;
+}
+@media (max-width: 768px) {
+  .info-topo {
+    display: none;
+  }
 }
 
 .busca figure {
@@ -210,6 +235,11 @@ header {
   display: table;
   font-size: 13px;
   width: 100%;
+}
+@media (max-width: 768px) {
+  #navbar {
+    display: none;
+  }
 }
 
 .nav-list {
@@ -410,6 +440,13 @@ header {
   height: auto;
   padding: 0 0 0 170px;
 }
+@media (max-width: 768px) {
+  #destaques {
+    width: 100%;
+    padding: 0 0 0 0;
+    padding-top: 5px;
+  }
+}
 
 .news-left {
   width: 34%;
@@ -417,7 +454,8 @@ header {
   padding-right: 10px;
 }
 
-.image-overlay, .image-overlay-videos {
+.image-overlay,
+.image-overlay-videos {
   position: absolute;
   top: 0;
   left: 0;
@@ -436,6 +474,11 @@ header {
   padding-left: 170px;
   padding-bottom: 15px;
 }
+@media (max-width: 768px) {
+  .banner {
+    display: none;
+  }
+}
 
 .news1 {
   z-index: 1;
@@ -448,7 +491,7 @@ header {
 .text-news-left {
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 0;
   z-index: 10;
   padding: 20px;
@@ -465,13 +508,13 @@ header {
 }
 
 .text-news-left span {
-  font-size: 10px;
+  font-size: 13px;
   color: #ffffff;
 }
 
 .text-news-left h2 {
   color: #ffffff;
-  font-size: 11px;
+  font-size: 15px;
   margin-top: 3px;
 }
 
@@ -533,21 +576,52 @@ header {
   padding: 0 170px 0 0;
 }
 
-.last-news {
-  border-top: 1px solid #d1d1d1;
-  padding: 5px 0 5px 0;
+@media (max-width: 768px) {
+  #news {
+    width: 350px;
+    font-size: 10px;
+    margin-left: 30px;
+    padding: 10px 0;
+  }
+  #news h2 {
+    font-size: 20px;
+    color: #065e8a;
+    margin-bottom: 5px;
+  }
+  .last-news {
+    padding: 5px 0 5px 0;
+  }
+  .last-news-text p {
+    color: #68962f;
+    font-weight: 300;
+    margin: 0;
+    font-size: 11px;
+    line-height: 1.2;
+    margin-top: 0px;
+  }
+  .last-news-text a {
+    font-size: 13px;
+  }
+  .last-news-date {
+    width: 40px;
+    color: #000000;
+    height: 55px;
+    /*border: 1px solid;*/
+  }
+  .last-news {
+    border-top: 1px solid #d1d1d1;
+    padding: 5px 0 5px 0;
+  }
+  .last-news-text a {
+    text-decoration: none;
+    font-size: 9px;
+    color: #212121;
+    margin: 0;
+    line-height: 1;
+    font-weight: bold;
+    text-align: justify;
+  }
 }
-
-.last-news-text a {
-  text-decoration: none;
-  font-size: 9px;
-  color: #212121;
-  margin: 0;
-  line-height: 1;
-  font-weight: bold;
-  text-align: justify;
-}
-
 .last-news-text p :hover {
   color: #32ac2e;
   /* Cor ao passar o mouse */
@@ -597,6 +671,15 @@ header {
   cursor: pointer;
   color: #86c23c;
 }
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    font-size: 30px;
+    float: left;
+    padding-top: 17px;
+    padding-left: 10px;
+  }
+}
 
 .menu,
 .search-mobile,
@@ -605,14 +688,14 @@ header {
 }
 
 .button-news {
-  padding: 12px 1px;
+  padding: 15px 1px;
   width: 100%;
   color: #065e8a;
   background-color: white;
   border: 1px solid #065e8a;
   font-size: 15px;
   font-weight: 800;
-  margin: 14px 0;
+  margin: 26px 0;
   border-radius: 4px;
   font-size: 10px;
   text-align: center;
@@ -696,10 +779,27 @@ header {
   margin-left: 170px;
   min-height: 160px;
 }
+@media (max-width: 768px) {
+  .publicitario {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #dfd9d9;
+    border-bottom: 1px solid #dfd9d9;
+    margin-left: 0;
+    min-height: 343px;
+    padding: 8px;
+  }
+}
 
 .espaco-publicitario {
   width: 50%;
   float: left;
+}
+@media (max-width: 768px) {
+  .espaco-publicitario {
+    width: 100%;
+    display: block;
+  }
 }
 
 .espaco-publicitario h2 {
@@ -710,6 +810,18 @@ header {
   width: 100%;
   margin-left: 170px;
   margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .espaco-publicitario h2 {
+    color: #065e8a;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 900;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 30px;
+  }
 }
 
 .publicitario h3 {
@@ -733,11 +845,24 @@ header {
   margin-right: 10px;
   float: left;
 }
+@media (max-width: 768px) {
+  .publicitario figure {
+    width: 90%;
+    margin-left: 23px;
+    display: block;
+  }
+}
 
 .text-publicitario {
   width: 60%;
   float: left;
   margin-top: 12px;
+}
+@media (max-width: 768px) {
+  .text-publicitario {
+    width: 100%;
+    padding: 0px 26px;
+  }
 }
 
 .videos {
@@ -784,7 +909,17 @@ header {
   padding: 15px;
   text-align: left;
 }
-
+@media (max-width: 768px) {
+  .text-video-destaque {
+    width: 320px;
+    position: absolute;
+    left: 35px;
+    bottom: 0px;
+    z-index: 10;
+    padding: 15px 0px;
+    text-align: left;
+  }
+}
 .text-video-destaque h4 {
   color: #ffffff;
   font-size: 15px;
@@ -853,6 +988,52 @@ header {
     opacity: 1;
   }
 }
+.grid3-rodape {
+  width: 100%;
+  border: 0;
+  border-top: 3px solid #68962f;
+  padding: 0 170px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-around;
+}
+.grid3-rodape .logo-rodape {
+  max-width: 70%;
+  fill: #68962f;
+  margin-top: 3px;
+  margin-left: -67px;
+  text-align: center;
+  display: table;
+  scale: 0.5;
+}
+.grid3-rodape .logo-rodape svg {
+  width: 100%;
+  fill: #065e8a;
+}
+.grid3-rodape .logo-rodape svg .simboloLogo {
+  fill: #68962f;
+}
+
+.email-logo {
+  width: 100%;
+  height: 100%;
+  font-size: 11px;
+  color: #757575;
+  font-weight: 800;
+}
+
+.info-rodape {
+  width: 40%;
+}
+.info-rodape .number1 {
+  display: block;
+  margin-bottom: 5px;
+}
+.info-rodape .number2 {
+  display: block;
+}
+
 @keyframes bounce {
   0% {
     transform: scale(1);
@@ -892,19 +1073,10 @@ header {
   #form-search {
     display: none;
   }
-  body {
-    padding-left: 0px;
-    z-index: 1000;
-    width: 100%;
-    height: auto;
-  }
   .menu,
   .search-mobile,
   .news-main-mobile {
     display: block;
-  }
-  .container {
-    padding: 5px 0;
   }
   .logo {
     max-width: 100%;
@@ -913,10 +1085,10 @@ header {
     text-align: center;
     display: table;
     float: left;
-    margin-top: -12px;
+    margin-top: -6px;
   }
   .logo svg {
-    scale: 0.8;
+    scale: 1.4;
   }
   .info-topo {
     display: none;
@@ -946,20 +1118,10 @@ header {
   .menu .sub-menu ul {
     position: static;
   }
-  .hamburger {
-    display: block;
-    font-size: 30px;
-    float: left;
-    padding-top: 5px;
-    padding-left: 10px;
-  }
-  #navbar {
-    display: none;
-  }
   .search-mobile {
     float: left;
     width: 30px;
-    padding-top: 5px;
+    padding-top: 17px;
     text-align: left;
     cursor: pointer;
     margin-left: 60px;
@@ -968,11 +1130,6 @@ header {
     fill: #0884c2;
     float: left;
     scale: 0.8;
-  }
-  header {
-    margin: 10px;
-    height: 70px;
-    padding: 0px 10px;
   }
   .column {
     flex: 1;
@@ -984,16 +1141,16 @@ header {
     width: 100%;
     position: relative;
     z-index: 1;
-    padding: 0px;
+    padding: 0px 20px;
   }
   .text-news-main-mobile {
-    width: 320px;
+    width: 100%;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 20px;
-    margin: 0 15px;
     color: #fff;
     z-index: 99;
+    padding: 20px;
   }
   .news-main-mobile figure {
     max-width: 100%;
@@ -1001,7 +1158,7 @@ header {
   }
   .news-main-mobile figure img {
     max-width: 100%;
-    width: 356px;
+    width: 100%;
     border-radius: 8px;
   }
   .text-news-main-mobile span {
@@ -1028,24 +1185,20 @@ header {
   }
   .last-news-text p {
     color: #68962f;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 1.2;
     margin-top: 0px;
   }
-  #destaques {
-    width: 100%;
-    padding: 0 0 0 0;
-    padding-top: 5px;
-  }
   .last-news-text a {
-    font-size: 13px;
+    font-size: 15px;
   }
   .last-news-date {
     width: 40px;
     color: #000000;
     height: 55px;
+    font-size: 12px;
     /*border: 1px solid;*/
   }
   /* Limpar floats após o conteúdo flutuante */
@@ -1057,40 +1210,8 @@ header {
   .banner {
     display: none;
   }
-  .espaco-publicitario {
-    width: 100%;
-    display: block;
-  }
-  .publicitario {
-    width: 100%;
-    height: auto;
-    border-top: 1px solid #dfd9d9;
-    border-bottom: 1px solid #dfd9d9;
-    margin-left: 0;
-    min-height: 325px;
-    padding: 8px;
-  }
-  .espaco-publicitario h2 {
-    color: #065e8a;
-    margin-top: 20px;
-    font-size: 25px;
-    font-weight: 900;
-    width: 100%;
-    margin-bottom: 10px;
-    text-align: left;
-    margin-left: 30px;
-  }
-  .publicitario figure {
-    width: 90%;
-    margin-left: 23px;
-    display: block;
-  }
   img {
     border-radius: 10px;
-  }
-  .text-publicitario {
-    width: 100%;
-    padding: 0px 15px;
   }
   .banner {
     width: 100%;
@@ -1102,7 +1223,7 @@ header {
   }
   .videos h4 {
     color: #065e8a;
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 25px;
     font-weight: 900;
     width: 100%;
@@ -1131,15 +1252,6 @@ header {
     border-radius: 4px;
     margin-top: 10px;
     scale: 1;
-  }
-  .text-video-destaque {
-    width: 320px;
-    position: absolute;
-    left: 35px;
-    top: 80px;
-    z-index: 10;
-    padding: 0px;
-    text-align: left;
   }
   .text-video-destaque h4 {
     color: #ffffff;
@@ -1214,11 +1326,12 @@ header {
     padding: 15px 20px;
     box-sizing: border-box;
   }
-  .image-overlay-videos, .image-overlay {
+  .image-overlay-videos,
+  .image-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 356px;
+    width: 87%;
     height: 100%;
     margin-left: 18px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0));
@@ -1230,14 +1343,14 @@ header {
   .image-overlay {
     position: absolute;
     top: 0;
-    left: 8px;
-    width: 356px;
+    left: 20px;
+    width: 90%;
     height: 100%;
-    margin-left: 18px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0));
     pointer-events: none;
     /* Evita que o degradê interfira com os elementos subjacentes */
     border-radius: 8px;
     z-index: 6;
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */
