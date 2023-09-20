@@ -29,6 +29,7 @@ body {
   line-height: 1;
   background-color: rgba(0, 0, 0, 0);
   margin: 0 auto;
+  overflow-y: hidden;
 
   main {
     max-width: 1400px;
@@ -481,7 +482,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 95%;
   height: 100%;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
   pointer-events: none;
@@ -540,7 +541,7 @@ header {
 .text-news-left {
   width: 100%;
   position: absolute;
-  top: 19%;
+  bottom: 1%;
   left: 0;
   z-index: 10;
   padding: 20px;
@@ -602,7 +603,7 @@ header {
   width: 90%;
   max-width: 90%;
   position: absolute;
-  top: 50%;
+  bottom: 5%;
   left: 0;
   margin: 0 15px;
   z-index: 11;
@@ -701,7 +702,8 @@ header {
 }
 
 .last-news {
-  padding: 5px 0 5px 0;
+  padding: 10px 0 5px 0;
+  margin-bottom: 10px;
   border-top: 1px solid #d1d1d1;
 
 }
@@ -765,22 +767,27 @@ header {
   color: #065e8a;
   background-color: white;
   border: 1px solid #065e8a;
-  font-size: 15px;
   font-weight: 800;
-  margin: 26px 0;
+  margin: 10px 0;
   border-radius: 4px;
   font-size: 10px;
   text-align: center;
-  line-height: 10px;
+  line-height: 0px;
+
+  @media (max-width: 768px) {
+    padding: 25px 0px;
+    font-size: 13px;
+    font-weight: 800;
+
+  }
 }
 
 .button-news-colunistas {
   padding: 7px 1px;
-  width: 128%;
+  width: 120%;
   color: #065e8a;
   background-color: white;
   border: 1px solid #065e8a;
-  font-size: 15px;
   font-weight: 800;
   margin: 26px 0;
   border-radius: 4px;
@@ -789,7 +796,10 @@ header {
   line-height: 10px;
 
   @media (max-width: 768px) {
-    width: 90%;
+    width: 115%;
+    padding: 13px 5px;
+    margin: 11px -30px;
+    font-size: 13px;
   }
 }
 
@@ -868,23 +878,22 @@ header {
 }
 
 .publicitario {
-  width: 73%;
+  width: 75%;
   height: auto;
   padding: 10px 0px;
   border-top: 1px solid #dfd9d9;
-  border-bottom: 1px solid #dfd9d9;
   margin-left: 170px;
-  min-height: 150px;
+  margin-bottom: 123px;
 
   @media (max-width: 768px) {
     width: 90%;
     height: auto;
     border-top: 1px solid #dfd9d9;
-    border-bottom: 1px solid #dfd9d9;
     margin-left: 0;
     min-height: 343px;
     padding: 8px;
     margin-left: 10px;
+    margin-bottom: 0;
   }
 }
 
@@ -921,7 +930,7 @@ header {
 }
 
 .publicitario h3 {
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 5px;
   font-weight: 700;
 }
@@ -981,23 +990,28 @@ header {
   h3 {
     color: #fff;
     font-size: 14px;
-    line-height: 1.0;
+    line-height: 1.5;
+
+    @media (max-width: 768px) {
+      padding-bottom: 10px;
+    }
   }
 }
 
 .video-destaque {
-  width: 95%;
+  width: 100%;
   position: relative;
-  min-height: 140px;
+  min-height: 130px;
   margin: 0 0;
 
   figure {
-    width: 100%;
+    width: 95%;
   }
 
   img {
     width: 100%;
     border-radius: 4px;
+
   }
 }
 
@@ -1005,16 +1019,16 @@ header {
   width: 100%;
   position: absolute;
   bottom: 0;
-  left: 0;
   z-index: 10;
+  right: 4px;
   padding: 15px;
   text-align: left;
 
   @media (max-width: 768px) {
-    width: 320px;
+    width: 66%;
     position: absolute;
     left: 35px;
-    bottom: 0px;
+    bottom: -5px;
     z-index: 10;
     padding: 15px 0px;
     text-align: left;
@@ -1052,7 +1066,7 @@ header {
 
   p {
     color: #212121;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 700;
 
   }
@@ -1174,9 +1188,19 @@ header {
 
   li a {
     font-size: 10px;
-    color: #0884c2;
-    line-height: 14px;
-    font-weight: 400;
+    color: #065e8a;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    line-height: 16px;
+    font-size: 10px;
+    font-weight: 500;
+
+    @media (max-width: 768px) {
+      line-height: 16px;
+      letter-spacing: 1px;
+      font-family: "Poppins", sans-serif;
+      font-size: 13px;
+    }
   }
 
   li a:hover {
@@ -1185,13 +1209,17 @@ header {
 
   h5 {
     color: #c2c2c2;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 21px;
+    font-family: sans-serif;
+
 
     @media (max-width: 768px) {
       width: 100%;
       text-align: center;
+      font-size: 20px;
+      font-weight: 600;
     }
   }
 }
@@ -1206,7 +1234,7 @@ header {
 
   @media (max-width: 768px) {
     margin-left: 27%;
-  
+
   }
 }
 
@@ -1223,10 +1251,10 @@ header {
     padding-bottom: 3px;
 
     @media (max-width: 768px) {
-    font-weight: normal;
-    font-size: 16px;
+      font-weight: normal;
+      font-size: 16px;
+    }
   }
-}
 
   @media (max-width: 768px) {
     width: 100%;
@@ -1255,6 +1283,7 @@ header {
     align-items: center;
     font-weight: normal;
     font-size: 14px;
+    margin-bottom: 7px;
 
   }
 }
@@ -1269,6 +1298,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 0;
+  margin-right: 3px;
 
   @media (max-width: 768px) {
     display: flex;
@@ -1290,6 +1320,9 @@ header {
   @media (max-width: 768px) {
     width: 50%;
     text-align: center;
+    border-top: 1px solid #c2c2c2;
+    margin-top: 30px;
+    padding-top: 15px;
   }
 }
 
@@ -1309,18 +1342,28 @@ header {
     text-align: center;
     justify-content: center;
     border-top: 1px solid #c2c2c2;
-    padding-top: 10px;
+    padding-top: 25px;
     margin-left: 15px;
-    border-bottom: 1px solid #c2c2c2;
-    height: 150px;
+    margin-bottom: 10px;
 
   }
 }
 
 
 
-.editorias-left,
-.editorias-right {
+.editorias-right,
+.editorias-left {
+  width: 30%;
+  height: auto;
+  float: left;
+  margin: 0px 0px;
+
+  @media (max-width: 768px) {
+    width: 50%;
+  }
+}
+
+.editorias-left {
   width: 30%;
   height: auto;
   float: left;
@@ -1403,6 +1446,13 @@ header {
   border-bottom: 1px solid;
   padding-top: 234px;
   color: #e4dada;
+
+  @media (max-width: 768px) {
+    width: 100%;
+
+    color: #e4dada;
+    border: none;
+  }
 }
 
 .text-footre {
@@ -1411,6 +1461,10 @@ header {
   display: block;
   font-size: 10px;
   font-weight: 500;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 @keyframes bounce {
@@ -1473,8 +1527,6 @@ header {
     display: block;
   }
 
-
-
   .logo {
     max-width: 100%;
     width: 50%;
@@ -1487,6 +1539,7 @@ header {
 
   .logo svg {
     scale: 1.4;
+    margin-left: 16px;
   }
 
   .info-topo {
@@ -1532,7 +1585,7 @@ header {
     padding-top: 17px;
     text-align: left;
     cursor: pointer;
-    margin-left: 60px;
+    margin-left: 78px;
   }
 
   .search-mobile svg {
@@ -1651,6 +1704,7 @@ header {
     width: 100%;
     margin-left: 10px;
     float: left;
+    margin-top: -41px;
 
     h4 {
       color: #065e8a;
@@ -1666,7 +1720,7 @@ header {
 
     h3 {
       color: #fff;
-      font-size: 20px;
+      font-size: 17px;
       line-height: 1.5;
     }
   }
@@ -1674,8 +1728,8 @@ header {
   .video-destaque {
     width: 100%;
     position: relative;
-    min-height: 140px;
     padding: 8px;
+    margin-left: 21px;
 
     figure {
       width: 90%;
@@ -1684,9 +1738,9 @@ header {
     }
 
     img {
-      width: 100%;
+      width: 85%;
       border-radius: 4px;
-      margin-top: 10px;
+      margin-top: 1px;
       scale: 1.0;
     }
   }
@@ -1700,8 +1754,8 @@ header {
   }
 
   .colunistas {
-    width: 86%;
-    margin-left: 29px;
+    width: 75%;
+    margin-left: 47px;
     float: left;
 
     h4 {
@@ -1776,7 +1830,7 @@ header {
     width: 100%;
     border-top: 1px solid #c2c2c2;
     border-bottom: 1px solid #c2c2c2;
-    margin-top: 50px;
+    margin-top: 10px;
 
   }
 
@@ -1791,10 +1845,10 @@ header {
   .image-overlay {
     position: absolute;
     top: 11px;
-    left: 0;
-    width: 87%;
-    height: 90%;
-    margin-left: 18px;
+    left: -15px;
+    width: 74%;
+    height: 89%;
+    margin-left: 33px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
     pointer-events: none;
     /* Evita que o degradê interfira com os elementos subjacentes */
@@ -1817,7 +1871,7 @@ header {
 
   }
 
-  .banner-mobile{
+  .banner-mobile {
     margin: 24px 33px;
     border-radius: 0;
   }
