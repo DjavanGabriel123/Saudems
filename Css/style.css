@@ -1,8 +1,5 @@
 @charset "UTF-8";
-/* Reset de margens e preenchimentos para o corpo */
-/*ATUALIZADA AS 14:43 25/08/2023*/
 @import "//Css/form-search";
-@import "//Css/noticias";
 * {
   margin: 0;
   padding: 0;
