@@ -20,7 +20,7 @@
 
 <body>
     <div class="overlay-menu" style="display:none;"></div>
-    <div class="overlay-search">
+    <div class="overlay-search" style="display: none;">
         <div class="close-search">
             <span class="material-symbols-outlined">
                 close</span>
@@ -631,6 +631,9 @@
     const menu = document.querySelector('.menu');
     const menu_overlay = document.querySelector('.overlay-menu');
 
+
+
+
     hamburger.addEventListener('click', () => {
         menu.classList.toggle('open');
         menu_overlay.style.display = menu_overlay.style.display === 'block' ? 'none' : 'block';
@@ -640,6 +643,12 @@
         menu.classList.toggle('open');
         menu_overlay.style.display = menu_overlay.style.display === 'block' ? 'none' : 'block';
     });
+
+    menu_overlay.addEventListener('click', () => {
+        menu.classList.toggle('open');
+        menu_overlay.style.display = menu_overlay.style.display === 'block' ? 'none' : 'block';
+    });
+
 
     
 

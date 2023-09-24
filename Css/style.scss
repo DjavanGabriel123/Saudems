@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-@import "//Css/form-search";
+
 
 
 html,
@@ -194,6 +194,7 @@ header {
   align-items: right;
   text-align: right;
   vertical-align: middle;
+  font-weight: 500;
 }
 
 .temp {
@@ -1950,7 +1951,10 @@ header {
       padding: 0;
       text-transform: uppercase;
       margin-left: 40px;
+    }
 
+    .form-overlay input::placeholder{
+      color: #fff;
     }
 
     .close-search{
