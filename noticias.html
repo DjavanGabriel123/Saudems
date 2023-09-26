@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaúdeMS</title>
+    <title>Últimas Notícias SaúdeMS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="Css/noticas.css">
@@ -32,7 +32,7 @@
             </form>
         </div>
     </div>
-    <div class="container">
+    
         <header id="saude">
             <section id="form-search" class="info-topo grid3">
                 <div class="data-busca">
@@ -59,7 +59,7 @@
                                 close</span>
                             &nbsp;Menu</a></li>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#especiais">Especiais</a></li>
+                    <li class="especiais"><a href="#especiais">Especiais</a></li>
                     <li><a href="#noticias">Últimas Noticias</a></li>
                     <li><a href="#editorias">Editorias</a></li>
 
@@ -171,7 +171,7 @@
                         </ul>
             </nav>
         </header>
-    </div>
+    
 
     <div class="clear"></div>
 
@@ -179,17 +179,19 @@
     </footer>
 
     <section class="grid_1">
+        <img src="Image/banner-simposio-300x100.gif" class="banner-mobile">
+
         <div class="las-news2">
             <h2>Últimas Notícias</h2>
             <h6>TELEMEDICINA INOVA SERVIÇOS EM SAÚDE</h6>
             <h3><a href="#">Telemedicina: uso da telerretaguarda inova o atendimento em saúde</a></h3>
         </div>
 
-        <div class="border-compartilhar"></div>
+        <div style="display: none;" class="border-compartilhar"></div>
 
 
         <div class="link-noticias">
-            <div class="icons">
+            <div style="display: none;" class="icons">
                 <div class="left-text">
                     <svg version="1.0" id="hora" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20">
@@ -448,11 +450,12 @@
             <div class="paginacao">
                 <div class="item-paginacao"><img src="/Image/arrow-primeira.gif"></div>
                 <div class="item-paginacao"><img src="/Image/arrow-anterior.gif"></div>
-                <div class="item-paginacao item-paginacao-texto gray-paginacao">1</div>
+                <div class="item-paginacao item-paginacao-texto gray-paginacao">01</div>
                 <div class="item-paginacao item-paginacao-total">de 146</div>
                 <div class="item-paginacao"><img src="/Image/arrow-proximo.gif"></div>
                 <div class="item-paginacao"><img src="/Image/arrow-ultimo.gif"></div>
             </div>
+        </div>
     </section>
 
     <footer class="grid-rodape">
@@ -528,7 +531,6 @@
                         </path>
                     </svg></a>
             </div>
-
         </div>
 
         <div class="editorias-footer">
@@ -588,6 +590,9 @@
     const menu = document.querySelector('.menu');
     const menu_overlay = document.querySelector('.overlay-menu');
 
+
+
+
     hamburger.addEventListener('click', () => {
         menu.classList.toggle('open');
         menu_overlay.style.display = menu_overlay.style.display === 'block' ? 'none' : 'block';
@@ -597,6 +602,12 @@
         menu.classList.toggle('open');
         menu_overlay.style.display = menu_overlay.style.display === 'block' ? 'none' : 'block';
     });
+
+    menu_overlay.addEventListener('click', () => {
+        menu.classList.toggle('open');
+        menu_overlay.style.display = menu_overlay.style.display === 'block' ? 'none' : 'block';
+    });
+
 
 
 
@@ -639,5 +650,4 @@
         submenu3.style.display = submenu3.style.display === 'block' ? 'none' : 'block';
     });
 </script>
-
 </html>

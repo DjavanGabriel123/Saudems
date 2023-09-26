@@ -50,6 +50,13 @@ body main {
   }
 }
 
+@media (max-width: 768px) {
+  .container-2 {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+}
+
 header {
   width: 100%;
   border: 0;
@@ -843,14 +850,11 @@ header {
 }
 @media (max-width: 768px) {
   .publicitario {
-    width: 90%;
+    width: 100%;
     height: auto;
     border-top: 1px solid #dfd9d9;
     margin-left: 0;
-    min-height: 343px;
-    padding: 8px;
-    margin-left: 10px;
-    margin-bottom: 0;
+    padding: 0px;
   }
 }
 
@@ -860,9 +864,10 @@ header {
 }
 @media (max-width: 768px) {
   .espaco-publicitario {
-    width: 95%;
+    width: 100%;
     display: block;
-    margin: 0px 11px;
+    border-bottom: 1px solid #dfd9d9;
+    padding-bottom: 20px;
   }
 }
 
@@ -878,13 +883,12 @@ header {
 @media (max-width: 768px) {
   .espaco-publicitario h2 {
     color: #065e8a;
-    margin-top: 20px;
     font-size: 25px;
     font-weight: 900;
     width: 100%;
     margin-bottom: 10px;
     text-align: left;
-    margin-left: 30px;
+    margin: 20px 0px;
   }
 }
 
@@ -917,8 +921,7 @@ header {
 }
 @media (max-width: 768px) {
   .publicitario figure {
-    width: 90%;
-    margin-left: 23px;
+    width: 100%;
     display: block;
   }
 }
@@ -931,7 +934,7 @@ header {
 @media (max-width: 768px) {
   .text-publicitario {
     width: 100%;
-    padding: 0px 26px;
+    margin-bottom: 10px;
   }
 }
 
@@ -987,13 +990,10 @@ header {
 }
 @media (max-width: 768px) {
   .text-video-destaque {
-    width: 66%;
+    width: 100%;
     position: absolute;
-    left: 35px;
-    bottom: -5px;
     z-index: 10;
-    padding: 15px 0px;
-    text-align: left;
+    top: 105px;
   }
 }
 .text-video-destaque h4 {
@@ -1618,40 +1618,31 @@ header {
   }
   .videos {
     width: 100%;
-    margin-left: 10px;
-    float: left;
-    margin-top: -26px;
+    margin: 0px;
   }
   .videos h4 {
     color: #065e8a;
-    margin-top: 30px;
     font-size: 25px;
     font-weight: 900;
-    width: 86%;
-    margin-bottom: 10px;
+    width: 100%;
     border-bottom: 1px solid #dfd9d9;
-    padding: 5px 20px;
+    margin-left: 0;
   }
   .videos h3 {
     color: #fff;
     font-size: 17px;
-    line-height: 1.5;
   }
   .video-destaque {
     width: 100%;
     position: relative;
-    padding: 8px;
-    margin-left: 21px;
   }
   .video-destaque figure {
-    width: 90%;
-    margin-left: 11px;
+    width: 100%;
     display: block;
   }
   .video-destaque img {
-    width: 85%;
+    width: 100%;
     border-radius: 4px;
-    margin-top: 1px;
     scale: 1;
   }
   .text-video-destaque h4 {
@@ -1660,48 +1651,43 @@ header {
     margin-top: 3px;
   }
   .colunistas {
-    width: 80%;
-    margin-left: 47px;
+    width: 100%;
     float: left;
+    margin: 0;
+    padding: 0;
   }
   .colunistas h4 {
     color: #065e8a;
-    margin-top: 20px;
     font-size: 25px;
     font-weight: 900;
     width: 100%;
-    margin-bottom: 10px;
     border-bottom: 1px solid #dfd9d9;
-    padding: 5px 10px;
   }
   .colunistas h6 {
     color: #68962F;
     font-size: 15px;
-    margin-bottom: 2px;
   }
   .colunistas p {
     color: #212121;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
   }
   .colunistas figure {
     float: left;
     width: 80px;
-    margin: 0 10px 0 0;
   }
   .colunistas img {
     border-radius: 50px;
     width: 88%;
   }
   .text-colunistas {
-    float: left;
-    width: 70%;
-    margin-top: 20px;
+    width: 100%;
+    float: none;
+    padding: 15px;
   }
   .colunista {
     width: 100%;
-    height: 100px;
-    margin-top: 20px;
+    height: 80px;
     border-bottom: 1px solid #dfd9d9;
   }
   .button-colunistas {
@@ -1730,9 +1716,9 @@ header {
   .image-overlay-videos,
   .image-overlay {
     position: absolute;
-    top: 11px;
-    left: -15px;
-    width: 74%;
+    top: 20px;
+    left: -33px;
+    width: 100%;
     height: 89%;
     margin-left: 33px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0));
@@ -1765,7 +1751,7 @@ header {
     left: 0;
     width: 100%;
     height: 4000px;
-    background-color: rgba(10, 46, 2, 0.836);
+    background-color: rgba(0, 0, 0, 0.836);
     /* Evita que o degradê interfira com os elementos subjacentes */
     z-index: 2000;
     margin: 0;
