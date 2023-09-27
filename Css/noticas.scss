@@ -56,7 +56,8 @@ a {
 
 
     @media (max-width: 768px) {
-        display: none;
+        margin-right: 90px;
+        font-size: 13px;
     }
 
 }
@@ -67,11 +68,12 @@ a {
     width: 74%;
     margin-left: auto;
     font-size: 23px;
+    margin-right: 0;
 
 
 
     @media (max-width: 768px) {
-        display: none;
+       margin-right: 90px;
     }
 
 
@@ -256,13 +258,14 @@ a {
 
 .close-search {
     display: block;
+
+    
 }
 
 .news-right {
     float: right;
     width: 32%;
-    height: 700px;
-    padding-top: 140px;
+    
     
 
     img {
@@ -270,8 +273,8 @@ a {
     }
 
     .number-big {
-        font-weight: 800;
-        font-size: 40px;
+        font-weight: bold;
+        font-size: 30px;
         color: #c2c2c2;
         width: 40px;
         text-align: center;
@@ -280,7 +283,7 @@ a {
 
     ul{
         list-style: none;
-        padding-left: 50px;
+        padding-left: 40px;
         margin-bottom: 10px;
     }
 
@@ -288,15 +291,15 @@ a {
         color: #065e8a;
         font-size: 20px;
         border-bottom: 1px solid #c2c2c2;
-        width: 78%;
-        margin-left: 50px;
-        padding-bottom: 20px;
+        width: 59%;
+        margin-left: 40px;
+        padding-bottom: 10px;
+        font-family: system-ui;
     }
 
     .text1{
         display: inline-flex;
-        border-bottom: 1px solid #c2c2c2;
-        width: 89%;
+        margin-bottom: 10px;
     }
 
     h6{
@@ -310,19 +313,26 @@ a {
         margin-top: 5px;
         color: #212121;
         font-weight: bolder;
-        text-align: center;
-        margin-right: 30px;
-        font-size: 15px;
-        margin-bottom: 10px;
+        font-size: 12px;
+        text-align: justify;
+        width: 52%;
     }
+}
+
+.border-news{
+    border-bottom: 1px solid #c2c2c2;
+    width: 65%;
 }
 
 .news-right p:hover {
     color: #68962f;
     /* Cor ao passar o mouse */
-    -webkit-text-decoration: underline green 2px;
     text-decoration: underline green 2px;
     text-decoration: none;
+}
+
+.text{
+    width: 100%;
 }
 
 
@@ -464,5 +474,9 @@ a {
 
     .menu .sub-menu li {
         border: none;
+    }
+
+    .news-right{
+        display: none;
     }
 }
