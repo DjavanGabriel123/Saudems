@@ -3,6 +3,10 @@ a {
   text-shadow: 0 0 black;
 }
 
+.container-banner {
+  margin: 10px 10px;
+}
+
 .grid_1 {
   width: 60%;
   display: inline-grid;
@@ -78,7 +82,7 @@ a {
 }
 
 .border-compartilhar {
-  width: 93%;
+  width: 78%;
   border-bottom: 1px solid #e2e2e2;
   padding-bottom: 20px;
   display: block;
@@ -93,7 +97,7 @@ a {
 }
 
 .link-noticias {
-  width: 100%;
+  width: 95%;
   margin: auto;
   padding-left: 7px;
   height: auto;
@@ -135,6 +139,7 @@ a {
   color: #68962f;
   font-weight: 400;
   margin-bottom: 8px;
+  font-size: 12px;
 }
 @media (max-width: 768px) {
   .text-noticas h6 {
@@ -155,7 +160,7 @@ a {
 }
 
 .icons {
-  width: 80%;
+  width: 64%;
   height: auto;
   margin-bottom: 15px;
 }
@@ -168,7 +173,7 @@ a {
 }
 
 .left-text {
-  width: 50%;
+  width: 65%;
   height: 1px;
 }
 
@@ -211,7 +216,7 @@ a {
 }
 
 #face {
-  width: 10%;
+  width: 13%;
   fill: #1877f2;
   border-radius: 4px;
 }
@@ -222,7 +227,7 @@ a {
 }
 
 #twitter {
-  width: 10%;
+  width: 13%;
   fill: #56a1f2;
   border-radius: 4px;
 }
@@ -233,7 +238,7 @@ a {
 }
 
 #whats {
-  width: 10%;
+  width: 13%;
   fill: #25d366;
   border-radius: 4px;
 }
@@ -244,7 +249,7 @@ a {
 }
 
 #Layer_1 {
-  width: 10%;
+  width: 13%;
   fill: #3c67c2;
   border-radius: 4px;
 }
@@ -260,17 +265,20 @@ a {
 
 .news-right {
   float: right;
-  width: 32%;
+  width: 25%;
+  margin-right: 135px;
+  margin-top: 10px;
 }
 .news-right img {
   scale: 0.7;
 }
 .news-right .number-big {
-  font-weight: bold;
   font-size: 30px;
   color: #c2c2c2;
   width: 40px;
   text-align: center;
+  font-family: "Sora", sans-serif;
+  font-weight: 900;
 }
 .news-right ul {
   list-style: none;
@@ -281,7 +289,7 @@ a {
   color: #065e8a;
   font-size: 20px;
   border-bottom: 1px solid #c2c2c2;
-  width: 59%;
+  width: 61%;
   margin-left: 40px;
   padding-bottom: 10px;
   font-family: system-ui;
@@ -300,17 +308,17 @@ a {
   margin-top: 5px;
   color: #212121;
   font-weight: bolder;
-  font-size: 12px;
+  font-size: 10px;
   text-align: justify;
   width: 52%;
 }
 
 .border-news {
   border-bottom: 1px solid #c2c2c2;
-  width: 65%;
+  width: 70%;
 }
 
-.news-right p:hover {
+.news-right a:hover {
   color: #68962f;
   /* Cor ao passar o mouse */
   -webkit-text-decoration: underline green 2px;
@@ -320,6 +328,7 @@ a {
 
 .text {
   width: 100%;
+  margin-left: 10px;
 }
 
 .paginacao {

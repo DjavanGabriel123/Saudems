@@ -4,6 +4,11 @@ a {
     text-shadow: 0 0 black;
 }
 
+
+.container-banner{
+    margin: 10px 10px;
+}
+
 .grid_1 {
     width: 60%;
     display: inline-grid;
@@ -73,14 +78,14 @@ a {
 
 
     @media (max-width: 768px) {
-       margin-right: 90px;
+        margin-right: 90px;
     }
 
 
 }
 
 .border-compartilhar {
-    width: 93%;
+    width: 78%;
     border-bottom: 1px solid #e2e2e2;
     padding-bottom: 20px;
     display: block;
@@ -94,7 +99,7 @@ a {
 }
 
 .link-noticias {
-    width: 100%;
+    width: 95%;
     margin: auto;
     padding-left: 7px;
     height: auto;
@@ -138,6 +143,7 @@ a {
         color: #68962f;
         font-weight: 400;
         margin-bottom: 8px;
+        font-size: 12px;
 
         @media (max-width: 768px) {
             margin-top: 20px;
@@ -160,7 +166,7 @@ a {
 }
 
 .icons {
-    width: 80%;
+    width: 64%;
     height: auto;
     margin-bottom: 15px;
 
@@ -173,7 +179,7 @@ a {
 }
 
 .left-text {
-    width: 50%;
+    width: 65%;
     height: 1px;
 }
 
@@ -217,7 +223,7 @@ a {
 
 
 #face {
-    width: 10%;
+    width: 13%;
     fill: #1877f2;
     border-radius: 4px;
 
@@ -227,7 +233,7 @@ a {
 }
 
 #twitter {
-    width: 10%;
+    width: 13%;
     fill: #56a1f2;
     border-radius: 4px;
 
@@ -237,7 +243,7 @@ a {
 }
 
 #whats {
-    width: 10%;
+    width: 13%;
     fill: #25d366;
     border-radius: 4px;
 
@@ -247,7 +253,7 @@ a {
 }
 
 #Layer_1 {
-    width: 10%;
+    width: 13%;
     fill: #3c67c2;
     border-radius: 4px;
 
@@ -259,80 +265,84 @@ a {
 .close-search {
     display: block;
 
-    
+
 }
 
 .news-right {
     float: right;
-    width: 32%;
-    
-    
+    width: 25%;
+    margin-right: 135px;
+    margin-top: 10px;
+
 
     img {
         scale: 0.7;
+
     }
 
     .number-big {
-        font-weight: bold;
         font-size: 30px;
         color: #c2c2c2;
         width: 40px;
         text-align: center;
-        
+        font-family: 'Sora', sans-serif;
+        font-weight: 900;
+
     }
 
-    ul{
+    ul {
         list-style: none;
         padding-left: 40px;
         margin-bottom: 10px;
     }
 
-    h2{
+    h2 {
         color: #065e8a;
         font-size: 20px;
         border-bottom: 1px solid #c2c2c2;
-        width: 59%;
+        width: 61%;
         margin-left: 40px;
         padding-bottom: 10px;
         font-family: system-ui;
     }
 
-    .text1{
+    .text1 {
         display: inline-flex;
         margin-bottom: 10px;
     }
 
-    h6{
+    h6 {
         margin-left: 40px;
         padding-top: 10px;
         color: #68962f;
         font-size: 8px;
     }
 
-    p{
+    p {
         margin-top: 5px;
         color: #212121;
         font-weight: bolder;
-        font-size: 12px;
+        font-size: 10px;
         text-align: justify;
         width: 52%;
     }
 }
 
-.border-news{
+.border-news {
     border-bottom: 1px solid #c2c2c2;
-    width: 65%;
+    width: 70%;
 }
 
-.news-right p:hover {
+.news-right a:hover {
     color: #68962f;
     /* Cor ao passar o mouse */
     text-decoration: underline green 2px;
     text-decoration: none;
 }
 
-.text{
+.text {
     width: 100%;
+    margin-left: 10px;
 }
 
 
@@ -476,7 +486,7 @@ a {
         border: none;
     }
 
-    .news-right{
+    .news-right {
         display: none;
     }
 }
