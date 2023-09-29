@@ -7,6 +7,15 @@ a {
   margin: 10px 10px;
 }
 
+.container {
+  margin-left: 160px;
+}
+@media (max-width: 768px) {
+  .container {
+    margin-left: 0px;
+  }
+}
+
 .grid_1 {
   width: 60%;
   display: inline-grid;
@@ -41,7 +50,7 @@ a {
 .las-news2 h2 {
   color: #065e8a;
   float: right;
-  width: 74%;
+  width: 100%;
   margin-bottom: 40px;
   font-weight: 900;
   margin-top: 15px;
@@ -56,7 +65,7 @@ a {
 .las-news2 h6 {
   color: #68962f;
   font-weight: normal;
-  width: 74%;
+  width: 100%;
   margin-left: auto;
   margin-bottom: 10px;
 }
@@ -70,7 +79,7 @@ a {
 .las-news2 h3 {
   color: #212121;
   font-weight: 700;
-  width: 74%;
+  width: 100%;
   margin-left: auto;
   font-size: 23px;
   margin-right: 0;
@@ -82,11 +91,10 @@ a {
 }
 
 .border-compartilhar {
-  width: 78%;
+  width: 95%;
   border-bottom: 1px solid #e2e2e2;
   padding-bottom: 20px;
   display: block;
-  margin-left: 167px;
   margin-bottom: 5px;
 }
 @media (max-width: 768px) {
@@ -97,11 +105,9 @@ a {
 }
 
 .link-noticias {
-  width: 95%;
+  width: 100%;
   margin: auto;
-  padding-left: 7px;
   height: auto;
-  margin-left: 160px;
   margin-top: 5px;
 }
 @media (max-width: 768px) {
@@ -160,7 +166,7 @@ a {
 }
 
 .icons {
-  width: 64%;
+  width: 35%;
   height: auto;
   margin-bottom: 15px;
 }
@@ -169,6 +175,7 @@ a {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 25px;
   }
 }
 
@@ -179,12 +186,13 @@ a {
 
 .data {
   font-size: 10px;
-  margin-left: 20px;
+  margin-left: 25px;
   color: #c2c2c2;
 }
 @media (max-width: 768px) {
   .data {
     font-size: 15px;
+    margin-left: 5px;
   }
 }
 
@@ -193,21 +201,21 @@ a {
 }
 
 #hora {
-  width: 5%;
+  width: 8%;
   fill: #c2c2c2;
   margin-top: 3px;
 }
 @media (max-width: 768px) {
   #hora {
-    width: 10%;
-    margin: 0 -5px;
+    width: 8%;
+    margin: -2 px -24px;
   }
 }
 
 .icons-right {
-  width: 25%;
+  width: 30%;
   float: right;
-  margin-right: -180px;
+  margin-right: -465px;
 }
 @media (max-width: 768px) {
   .icons-right {
@@ -216,46 +224,46 @@ a {
 }
 
 #face {
-  width: 13%;
+  width: 20%;
   fill: #1877f2;
   border-radius: 4px;
 }
 @media (max-width: 768px) {
   #face {
-    width: 20%;
+    width: 15%;
   }
 }
 
 #twitter {
-  width: 13%;
+  width: 20%;
   fill: #56a1f2;
   border-radius: 4px;
 }
 @media (max-width: 768px) {
   #twitter {
-    width: 20%;
+    width: 15%;
   }
 }
 
 #whats {
-  width: 13%;
+  width: 20%;
   fill: #25d366;
   border-radius: 4px;
 }
 @media (max-width: 768px) {
   #whats {
-    width: 20%;
+    width: 15%;
   }
 }
 
 #Layer_1 {
-  width: 13%;
+  width: 20%;
   fill: #3c67c2;
   border-radius: 4px;
 }
 @media (max-width: 768px) {
   #Layer_1 {
-    width: 20%;
+    width: 15%;
   }
 }
 
@@ -266,7 +274,7 @@ a {
 .news-right {
   float: right;
   width: 25%;
-  margin-right: 135px;
+  margin-right: 190px;
   margin-top: 10px;
 }
 @media (max-width: 768px) {
@@ -276,29 +284,31 @@ a {
   }
 }
 .news-right img {
-  scale: 0.7;
+  margin-bottom: 10px;
+  width: 80%;
 }
 @media (max-width: 768px) {
   .news-right img {
     width: 100%;
+    scale: 0.9;
   }
 }
 .news-right .number-big {
   font-size: 30px;
   color: #c2c2c2;
-  width: 40px;
-  text-align: center;
+  width: 30px;
   font-family: "Sora", sans-serif;
   font-weight: 900;
 }
 @media (max-width: 768px) {
   .news-right .number-big {
     font-size: 45px;
+    text-align: center;
+    margin-right: 10px;
   }
 }
 .news-right ul {
   list-style: none;
-  padding-left: 40px;
   margin-bottom: 10px;
 }
 @media (max-width: 768px) {
@@ -310,8 +320,7 @@ a {
   color: #065e8a;
   font-size: 20px;
   border-bottom: 1px solid #c2c2c2;
-  width: 70%;
-  margin-left: 50px;
+  width: 79%;
   padding-bottom: 10px;
   font-family: system-ui;
 }
@@ -333,7 +342,7 @@ a {
   }
 }
 .news-right h6 {
-  margin-left: 40px;
+  margin-left: 30px;
   padding-top: 10px;
   color: #68962f;
   font-size: 8px;
@@ -366,7 +375,6 @@ a {
 .border-news {
   border-bottom: 1px solid #c2c2c2;
   width: 80%;
-  margin-left: 10px;
 }
 @media (max-width: 768px) {
   .border-news {
@@ -386,7 +394,6 @@ a {
 
 .text {
   width: 100%;
-  margin-left: 10px;
 }
 @media (max-width: 768px) {
   .text {
