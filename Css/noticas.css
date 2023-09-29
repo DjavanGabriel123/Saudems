@@ -310,8 +310,8 @@ a {
   color: #065e8a;
   font-size: 20px;
   border-bottom: 1px solid #c2c2c2;
-  width: 73%;
-  margin-left: 40px;
+  width: 70%;
+  margin-left: 50px;
   padding-bottom: 10px;
   font-family: system-ui;
 }
@@ -365,12 +365,14 @@ a {
 
 .border-news {
   border-bottom: 1px solid #c2c2c2;
-  width: 85%;
+  width: 80%;
+  margin-left: 10px;
 }
 @media (max-width: 768px) {
   .border-news {
     width: 90%;
     padding-bottom: 10px;
+    margin-left: 0;
   }
 }
 
