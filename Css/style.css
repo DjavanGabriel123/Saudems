@@ -508,6 +508,7 @@ header {
   justify-content: center;
   padding-left: 170px;
   padding-bottom: 15px;
+  margin-top: 20px;
 }
 @media (max-width: 768px) {
   .banner {
