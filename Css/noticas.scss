@@ -274,9 +274,18 @@ a {
     margin-right: 135px;
     margin-top: 10px;
 
+    @media (max-width: 768px) {
+        width: 100%;
+        float: none;
+    }
+
 
     img {
         scale: 0.7;
+
+        @media (max-width: 768px) {
+        width: 100%;
+        }
 
     }
 
@@ -288,27 +297,47 @@ a {
         font-family: 'Sora', sans-serif;
         font-weight: 900;
 
+        @media (max-width: 768px) {
+            font-size: 45px;
+        }
+
     }
 
     ul {
         list-style: none;
         padding-left: 40px;
         margin-bottom: 10px;
+
+        @media (max-width: 768px) {
+            padding-left: 20px;
+        }
     }
 
     h2 {
         color: #065e8a;
         font-size: 20px;
         border-bottom: 1px solid #c2c2c2;
-        width: 61%;
+        width: 73%;
         margin-left: 40px;
         padding-bottom: 10px;
         font-family: system-ui;
+
+        @media (max-width: 768px) {
+            width: 86%;
+            margin-left: 20px;
+            font-size: 24px;
+            padding-bottom: 15px;
+
+        }
     }
 
     .text1 {
         display: inline-flex;
         margin-bottom: 10px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 0;
+        }
     }
 
     h6 {
@@ -316,6 +345,14 @@ a {
         padding-top: 10px;
         color: #68962f;
         font-size: 8px;
+
+        @media (max-width: 768px) {
+            font-size: 10px;
+            margin-left: 45px;
+            font-weight: 500;
+        }
+
+        
     }
 
     p {
@@ -324,13 +361,26 @@ a {
         font-weight: bolder;
         font-size: 10px;
         text-align: justify;
-        width: 52%;
+        width: 67%;
+
+        @media (max-width: 768px) {
+            font-size: 13px;
+            text-align: justify;
+            margin-left: 5px;
+            margin-top: 10px;
+            width: 76%;
+        }
     }
 }
 
 .border-news {
     border-bottom: 1px solid #c2c2c2;
-    width: 70%;
+    width: 85%;
+
+    @media (max-width: 768px) {
+        width: 90%;
+        padding-bottom: 10px;
+    }
 }
 
 .news-right a:hover {
@@ -343,6 +393,11 @@ a {
 .text {
     width: 100%;
     margin-left: 10px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 50px;
+    }
+
 }
 
 
@@ -484,9 +539,5 @@ a {
 
     .menu .sub-menu li {
         border: none;
-    }
-
-    .news-right {
-        display: none;
     }
 }

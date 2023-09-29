@@ -269,8 +269,19 @@ a {
   margin-right: 135px;
   margin-top: 10px;
 }
+@media (max-width: 768px) {
+  .news-right {
+    width: 100%;
+    float: none;
+  }
+}
 .news-right img {
   scale: 0.7;
+}
+@media (max-width: 768px) {
+  .news-right img {
+    width: 100%;
+  }
 }
 .news-right .number-big {
   font-size: 30px;
@@ -280,23 +291,46 @@ a {
   font-family: "Sora", sans-serif;
   font-weight: 900;
 }
+@media (max-width: 768px) {
+  .news-right .number-big {
+    font-size: 45px;
+  }
+}
 .news-right ul {
   list-style: none;
   padding-left: 40px;
   margin-bottom: 10px;
 }
+@media (max-width: 768px) {
+  .news-right ul {
+    padding-left: 20px;
+  }
+}
 .news-right h2 {
   color: #065e8a;
   font-size: 20px;
   border-bottom: 1px solid #c2c2c2;
-  width: 61%;
+  width: 73%;
   margin-left: 40px;
   padding-bottom: 10px;
   font-family: system-ui;
 }
+@media (max-width: 768px) {
+  .news-right h2 {
+    width: 86%;
+    margin-left: 20px;
+    font-size: 24px;
+    padding-bottom: 15px;
+  }
+}
 .news-right .text1 {
   display: inline-flex;
   margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .news-right .text1 {
+    margin-bottom: 0;
+  }
 }
 .news-right h6 {
   margin-left: 40px;
@@ -304,18 +338,40 @@ a {
   color: #68962f;
   font-size: 8px;
 }
+@media (max-width: 768px) {
+  .news-right h6 {
+    font-size: 10px;
+    margin-left: 45px;
+    font-weight: 500;
+  }
+}
 .news-right p {
   margin-top: 5px;
   color: #212121;
   font-weight: bolder;
   font-size: 10px;
   text-align: justify;
-  width: 52%;
+  width: 67%;
+}
+@media (max-width: 768px) {
+  .news-right p {
+    font-size: 13px;
+    text-align: justify;
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 76%;
+  }
 }
 
 .border-news {
   border-bottom: 1px solid #c2c2c2;
-  width: 70%;
+  width: 85%;
+}
+@media (max-width: 768px) {
+  .border-news {
+    width: 90%;
+    padding-bottom: 10px;
+  }
 }
 
 .news-right a:hover {
@@ -329,6 +385,11 @@ a {
 .text {
   width: 100%;
   margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .text {
+    margin-bottom: 50px;
+  }
 }
 
 .paginacao {
@@ -443,8 +504,5 @@ a {
   }
   .menu .sub-menu li {
     border: none;
-  }
-  .news-right {
-    display: none;
   }
 }/*# sourceMappingURL=noticas.css.map */
