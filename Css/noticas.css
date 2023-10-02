@@ -208,7 +208,7 @@ a {
 @media (max-width: 768px) {
   #hora {
     width: 8%;
-    margin: -2 px -24px;
+    margin: 0px -20px;
   }
 }
 

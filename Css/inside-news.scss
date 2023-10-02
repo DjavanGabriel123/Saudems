@@ -1,9 +1,289 @@
-html, body {
-    overflow-x: unset;
-}
-
-
-.banner{
+.banner {
     margin-top: 20px;
 }
 
+.container-body {
+    text-align: center;
+
+    h6 {
+        color: #68962f;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 40px;
+    }
+
+    h1 {
+        font-size: 40px;
+        color: #212121;
+        font-weight: 900;
+        font-family: "Sora", sans-serif;
+        margin-top: 20px;
+        word-spacing: -1px;
+
+    }
+}
+
+.border {
+    border-bottom: 1px solid;
+    width: 100%;
+    color: #e2e2e2;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.border-text {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    width: 100%;
+    color: #e2e2e2;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    padding: 20px;
+}
+
+.border-image {
+    border-bottom: 1px solid;
+    width: 55%;
+    color: #e2e2e2;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    margin-left: 290px;
+}
+
+.topo {
+    width: 100%;
+    padding: 0px 170px;
+}
+
+.link-noticias {
+    width: 70%;
+    margin: auto;
+    height: 5px;
+
+    @media (max-width: 768px) {
+        margin: 0;
+    }
+}
+
+.image-home {
+    width: 55%;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.icons {
+    width: 65%;
+    height: auto;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 25px;
+    }
+
+}
+
+.left-text {
+    width: 65%;
+    height: 1px;
+
+    strong {
+        font-size: 10px;
+        color: #212121;
+    }
+
+    span {
+        font-size: 10px;
+    }
+}
+
+.data {
+    font-size: 10px;
+    color: #c2c2c2;
+    display: flex;
+
+
+    @media (max-width: 768px) {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+}
+
+
+.local {
+    display: block;
+}
+
+
+#hora {
+    width: 8%;
+    fill: #c2c2c2;
+    margin-top: 3px;
+
+    @media (max-width: 768px) {
+        width: 8%;
+        margin: -2 px -24px;
+    }
+}
+
+.icons-right {
+    width: 20%;
+    float: right;
+    margin-right: -230px;
+
+
+    @media (max-width: 768px) {
+        margin: 0;
+    }
+}
+
+.icons-right-text {
+    width: 15%;
+    float: right;
+    margin-right: -45px;
+    padding-top: 42px;
+
+    .share {
+        font-size: 10px;
+        line-height: 0;
+        color: #c2c2c2;
+    }
+}
+
+
+.text-body {
+    margin-bottom: 35px;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 25px;
+    width: 55%;
+    display: inline-block;
+
+    p {
+        margin-bottom: 35px;
+        color: #757575;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: 600;
+        color: #696969;
+        line-height: 50px;
+    }
+}
+
+.grid-leia {
+    
+
+
+    h3 {
+        width: 55%;
+        color: #065e8a;
+        font-size: 15px;
+       }
+
+    h6{
+        color:#68962f;
+    }
+
+    .image1 {
+        width: 15%;
+        border-radius: 4px;
+        margin-right: 480px ;
+        margin-top: 20px;
+    }
+}
+
+.text-grid{
+    width: 100%;
+    display: table-cell;
+    margin-top: 0;
+
+
+    h3{
+        color: #212121;
+        font-size: 10px;
+        width: 100%;
+    }
+
+    h6{
+        color: #065e8a;
+        font-size: 10px;
+        margin-top: 0;
+    }
+
+}
+#face-topo{
+    width: 15%;
+    fill: #1877f2;
+    border-radius: 0px;
+
+    @media (max-width: 768px) {
+        width: 15%;
+    }
+}
+
+#twitter-topo {
+    width: 15%;
+    fill: #56a1f2;
+    border-radius: 0px;
+
+    @media (max-width: 768px) {
+        width: 15%;
+    }
+}
+
+#whats-topo{
+    width: 15%;
+    fill: #25d366;
+    border-radius: 0px;
+
+    @media (max-width: 768px) {
+        width: 15%;
+    }
+}
+
+
+
+
+
+#face {
+    width: 15%;
+    fill: #1877f2;
+    border-radius: 0px;
+
+    @media (max-width: 768px) {
+        width: 15%;
+    }
+}
+
+#twitter{
+    width: 15%;
+    fill: #56a1f2;
+    border-radius: 0px;
+
+    @media (max-width: 768px) {
+        width: 15%;
+    }
+}
+
+#whats {
+    width: 15%;
+    fill: #25d366;
+    border-radius: 0px;
+
+    @media (max-width: 768px) {
+        width: 15%;
+    }
+}
+
+#Layer_1 {
+    width: 15%;
+    fill: #3c67c2;
+    border-radius: 0px;
+
+    @media (max-width: 768px) {
+        width: 15%;
+    }
+}
