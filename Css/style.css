@@ -604,7 +604,7 @@ header {
 }
 
 #news {
-  width: 30%;
+  width: 32%;
   float: left;
   margin-top: 10px;
   margin-left: 10px;
@@ -843,10 +843,10 @@ header {
 .publicitario {
   width: 75%;
   height: auto;
-  padding: 10px 0px;
+  padding: 5px 0px;
   border-top: 1px solid #dfd9d9;
   margin-left: 170px;
-  margin-bottom: 123px;
+  margin-bottom: 120px;
 }
 @media (max-width: 768px) {
   .publicitario {
@@ -859,7 +859,7 @@ header {
 }
 
 .espaco-publicitario {
-  width: 50%;
+  width: 45%;
   float: left;
 }
 @media (max-width: 768px) {
@@ -893,7 +893,7 @@ header {
 }
 
 .publicitario h3 {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 5px;
   font-weight: 700;
 }
@@ -940,7 +940,7 @@ header {
 }
 
 .videos {
-  width: 20%;
+  width: 18%;
   margin-left: 32px;
   float: left;
 }
@@ -956,7 +956,7 @@ header {
 }
 .videos h3 {
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5;
 }
 @media (max-width: 768px) {
@@ -1003,7 +1003,7 @@ header {
 }
 
 .colunistas {
-  width: 26%;
+  width: 23%;
   margin-left: 10px;
   float: left;
 }
@@ -1024,7 +1024,7 @@ header {
 }
 .colunistas p {
   color: #212121;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
 }
 .colunistas figure {
@@ -1039,7 +1039,7 @@ header {
 
 .text-colunistas {
   float: left;
-  width: 80%;
+  width: 75%;
   margin-top: 10px;
 }
 
